@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="00.MainApp">
+      <UniqueIdentifier>{3c8e68c6-8e23-4826-9ce0-5b33352d646e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98.Default">
+      <UniqueIdentifier>{e4c64eee-051a-48e5-8b4b-6d80e77d6085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Headers">
+      <UniqueIdentifier>{5cd02dc7-b5eb-41f0-ac5e-976cb4fa6ea8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="97.Imgui">
+      <UniqueIdentifier>{86968f65-7fcd-461a-ba6b-61f5a626f231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.ShaderFiles">
+      <UniqueIdentifier>{65cd7be3-8aac-48bf-bd27-91e26096b3e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Imgui_Manager">
+      <UniqueIdentifier>{c14180a5-32a5-4d16-a690-f2ffbc8e7898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Objects">
+      <UniqueIdentifier>{6944bf4f-7ffe-49f3-8d19-f59b58aad736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Objects\01.Terrain">
+      <UniqueIdentifier>{afe6a424-b905-4312-9033-deb67b0c4762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Objects\02.Camera">
+      <UniqueIdentifier>{170a69af-8007-4f43-a271-849a3679106b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect">
+      <UniqueIdentifier>{90874fbe-bf29-4992-b142-ce56217a3fe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Snow">
+      <UniqueIdentifier>{8f4265bb-a740-4a82-8bc2-e13099dc3ce0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Bleeding">
+      <UniqueIdentifier>{1f4461a2-55ce-4f07-9fd9-051989765873}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EffectTool.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imconfig.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_impl_dx11.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_impl_glfw.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_impl_opengl3.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_impl_opengl3_loader.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_impl_win32.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_internal.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Imgui_Manager.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imstb_rectpack.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imstb_textedit.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imstb_truetype.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EffectTool_Defines.h">
+      <Filter>99.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EffectToolMainApp.h">
+      <Filter>00.MainApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EffectImgui_Manager.h">
+      <Filter>01.Imgui_Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EffectTool_Camera.h">
+      <Filter>03.Objects\02.Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Effect_Terrain.h">
+      <Filter>03.Objects\01.Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Snow.h">
+      <Filter>04.Effect\Snow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Bleeding.h">
+      <Filter>04.Effect\Bleeding</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="EffectTool.ico">
+      <Filter>98.Default</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>98.Default</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EffectTool.cpp">
+      <Filter>98.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_demo.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_draw.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_impl_dx11.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_impl_glfw.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_impl_opengl3.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_impl_win32.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_tables.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_widgets.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\EffectToolMainApp.cpp">
+      <Filter>00.MainApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\EffectImgui_Manager.cpp">
+      <Filter>01.Imgui_Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\EffectTool_Camera.cpp">
+      <Filter>03.Objects\02.Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Effect_Terrain.cpp">
+      <Filter>03.Objects\01.Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Snow.cpp">
+      <Filter>04.Effect\Snow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Bleeding.cpp">
+      <Filter>04.Effect\Bleeding</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EffectTool.rc">
+      <Filter>98.Default</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_Navigation.hlsl">
+      <Filter>96.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxMesh.hlsl">
+      <Filter>96.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxNorTex.hlsl">
+      <Filter>96.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPointInstance.hlsl">
+      <Filter>96.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPosTex.hlsl">
+      <Filter>96.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxRectInstance.hlsl">
+      <Filter>96.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxAnimMesh.hlsl">
+      <Filter>96.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxCubeTex.hlsl">
+      <Filter>96.ShaderFiles</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

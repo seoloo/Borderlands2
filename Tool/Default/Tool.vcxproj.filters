@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="98.Default">
+      <UniqueIdentifier>{07b9a3f8-6da1-479c-948f-773da880fe25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Headers">
+      <UniqueIdentifier>{ffaa7b30-3cc8-49dc-91b4-4b6208b13397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.ToolMainApp">
+      <UniqueIdentifier>{8157122d-5c62-4bcf-8493-5034ab913170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Imgui_Manager">
+      <UniqueIdentifier>{8c0b0c0a-096a-476b-b369-23d04004fa30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="97.Imgui">
+      <UniqueIdentifier>{5d5449ad-332e-4c7c-b605-1b9e80569eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object">
+      <UniqueIdentifier>{4749efa0-eede-4d90-9bb7-336b1c3735c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Manager">
+      <UniqueIdentifier>{8878ccfc-ad99-4f5d-bc7e-5841c36b8755}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Terrain">
+      <UniqueIdentifier>{6146af45-7dd2-4037-babd-5c80867b5365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.ShaderFiles">
+      <UniqueIdentifier>{ce275734-03a0-4f24-86bb-14b6d17edc0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Level">
+      <UniqueIdentifier>{20ac4f74-6c9d-4509-88a9-fcf01fa3b951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Level\Loader">
+      <UniqueIdentifier>{cd7abd98-85a4-4aa1-a6a5-adb900664b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Level\Level_Tool">
+      <UniqueIdentifier>{4dc6d238-b175-4086-88f9-dec7387a60c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object">
+      <UniqueIdentifier>{d12c3bc7-bc69-4fe4-a945-8d61034f53f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\IceBox">
+      <UniqueIdentifier>{efd96ddd-a8ef-4a89-9992-c9db5f58e3da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\IceBox\IceBox01">
+      <UniqueIdentifier>{31ee8c14-97c4-41d7-ba3e-ec641680c8f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\Large_Rock1">
+      <UniqueIdentifier>{e8538ad4-2dc2-4b30-8718-494451a06c55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\Bench">
+      <UniqueIdentifier>{2d0435d0-e58a-455f-a918-7fa6767a7584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\CircularSupport">
+      <UniqueIdentifier>{a72c7db7-e884-4969-9c64-79a5c4f2aa2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\Container">
+      <UniqueIdentifier>{7d5f2b82-7f86-4287-846f-c9f84f1d2928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\Crate">
+      <UniqueIdentifier>{ac54d634-4efa-4ca1-a8d0-ca8633892af6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\CrateSet">
+      <UniqueIdentifier>{490a60f0-e7e2-44fd-b6be-cba26b4c9598}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\House">
+      <UniqueIdentifier>{868963f0-513f-4d94-a08d-d92007cc1649}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\Pillar">
+      <UniqueIdentifier>{0cedcf8c-e03a-4f68-aefd-fb1c7247581d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\Rock">
+      <UniqueIdentifier>{2505eeeb-c5e2-4c66-93fe-0d0ca07343ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\Rock\Rock1">
+      <UniqueIdentifier>{4d580a83-4cfe-4446-a8dd-366ac071e2f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\TunnelDoor">
+      <UniqueIdentifier>{c7d4ee6d-9b7d-444a-a749-1033fa90791c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\WaterTower">
+      <UniqueIdentifier>{f4b6bc07-cfe5-4bf4-a6da-5033944c0f31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\Yurt">
+      <UniqueIdentifier>{55084945-53c0-4c63-94c9-9a3c36e94265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\Yurt2">
+      <UniqueIdentifier>{4448e080-e346-4578-b87f-5b48ac9400f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\MetalBeam">
+      <UniqueIdentifier>{0047085c-5d6d-4b6f-a97a-014db1e63a05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\MetalLadder">
+      <UniqueIdentifier>{2201d6f3-1a5e-4abc-b095-cb3faa3513c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\DamWall">
+      <UniqueIdentifier>{e5ba0081-74fe-4230-9882-47fc7b03dcb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\BarCounter">
+      <UniqueIdentifier>{0df28cf5-3ce0-4604-ae3b-5cc657016da2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\BedGarbage">
+      <UniqueIdentifier>{7af02110-a5d4-42ca-a984-9d5d605062ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\Dropship">
+      <UniqueIdentifier>{e0eb999b-06d3-4310-ae9c-bef4626893ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\JakobsTank">
+      <UniqueIdentifier>{c4c3c5f9-8fce-4a99-bae4-73e7a99e3f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\DropzoneWall">
+      <UniqueIdentifier>{f14a9a8a-a68b-4151-9667-a02a7b12cbbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\LynchwoodHotel">
+      <UniqueIdentifier>{01fffda0-ff78-4250-a948-0a468c3f4a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\Boat">
+      <UniqueIdentifier>{bfcf415d-0cc2-477f-9881-00abb9cd634d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Tool_Object\Object\ForkLift">
+      <UniqueIdentifier>{f382d874-fc2d-4a35-bf29-65669061b4ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Navi">
+      <UniqueIdentifier>{d3ef5290-c679-46fe-b2ee-c1004a7db263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Camera">
+      <UniqueIdentifier>{6ae3defe-d029-4b91-9241-0a0e1aa0688f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Navi\Manager">
+      <UniqueIdentifier>{895f087f-365b-4f6c-8a0f-88f09206a310}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imstb_truetype.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imstb_textedit.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imstb_rectpack.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_internal.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_impl_opengl3_loader.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_impl_opengl3.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_impl_glfw.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_impl_dx11.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imconfig.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ToolMainApp.h">
+      <Filter>00.ToolMainApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Imgui_Manager.h">
+      <Filter>01.Imgui_Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_impl_win32.h">
+      <Filter>97.Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Tool_Camera.h">
+      <Filter>05.Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Tool_ObjectManager.h">
+      <Filter>03.Tool_Object\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Tool_Terrain.h">
+      <Filter>03.Tool_Object\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Tool_Loader.h">
+      <Filter>02.Level\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_ToolLoading.h">
+      <Filter>02.Level</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Tool.h">
+      <Filter>02.Level\Level_Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Tool_Object.h">
+      <Filter>03.Tool_Object\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Tool_Defines.h">
+      <Filter>99.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Tool_Object_Icebox01.h">
+      <Filter>03.Tool_Object\Object\IceBox\IceBox01</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Large_Rock1.h">
+      <Filter>03.Tool_Object\Object\Large_Rock1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Bench.h">
+      <Filter>03.Tool_Object\Object\Bench</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CircularSupport.h">
+      <Filter>03.Tool_Object\Object\CircularSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Container.h">
+      <Filter>03.Tool_Object\Object\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Crate.h">
+      <Filter>03.Tool_Object\Object\Crate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CrateSet.h">
+      <Filter>03.Tool_Object\Object\CrateSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\House.h">
+      <Filter>03.Tool_Object\Object\House</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Pillar.h">
+      <Filter>03.Tool_Object\Object\Pillar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Rock1.h">
+      <Filter>03.Tool_Object\Object\Rock\Rock1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\TunnelDoor.h">
+      <Filter>03.Tool_Object\Object\TunnelDoor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\WaterTower.h">
+      <Filter>03.Tool_Object\Object\WaterTower</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Yurt2.h">
+      <Filter>03.Tool_Object\Object\Yurt2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Yurt.h">
+      <Filter>03.Tool_Object\Object\Yurt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MetalBeam.h">
+      <Filter>03.Tool_Object\Object\MetalBeam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MetalLadder.h">
+      <Filter>03.Tool_Object\Object\MetalLadder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DamWall.h">
+      <Filter>03.Tool_Object\Object\DamWall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BarCounter.h">
+      <Filter>03.Tool_Object\Object\BarCounter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BedGarbage.h">
+      <Filter>03.Tool_Object\Object\BedGarbage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Dropship.h">
+      <Filter>03.Tool_Object\Object\Dropship</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\JakobsTank.h">
+      <Filter>03.Tool_Object\Object\JakobsTank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DropzoneWall.h">
+      <Filter>03.Tool_Object\Object\DropzoneWall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\LynchwoodHotel.h">
+      <Filter>03.Tool_Object\Object\LynchwoodHotel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Boat.h">
+      <Filter>03.Tool_Object\Object\Boat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ForkLift.h">
+      <Filter>03.Tool_Object\Object\ForkLift</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Navi.h">
+      <Filter>04.Navi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Navi_Manager.h">
+      <Filter>04.Navi\Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>98.Default</Filter>
+    </Image>
+    <Image Include="Tool.ico">
+      <Filter>98.Default</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Tool.rc">
+      <Filter>98.Default</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tool.cpp">
+      <Filter>98.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_widgets.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_tables.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_impl_opengl3.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_impl_glfw.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_impl_dx11.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_draw.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_demo.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ToolMainApp.cpp">
+      <Filter>00.ToolMainApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Imgui_Manager.cpp">
+      <Filter>01.Imgui_Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui_impl_win32.cpp">
+      <Filter>97.Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Tool_Camera.cpp">
+      <Filter>05.Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Tool_ObjectManager.cpp">
+      <Filter>03.Tool_Object\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Tool_Terrain.cpp">
+      <Filter>03.Tool_Object\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Tool_Loader.cpp">
+      <Filter>02.Level\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_ToolLoading.cpp">
+      <Filter>02.Level</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Tool.cpp">
+      <Filter>02.Level\Level_Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Tool_Object.cpp">
+      <Filter>03.Tool_Object\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Tool_Object_Icebox01.cpp">
+      <Filter>03.Tool_Object\Object\IceBox\IceBox01</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Large_Rock1.cpp">
+      <Filter>03.Tool_Object\Object\Large_Rock1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Bench.cpp">
+      <Filter>03.Tool_Object\Object\Bench</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CircularSupport.cpp">
+      <Filter>03.Tool_Object\Object\CircularSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Container.cpp">
+      <Filter>03.Tool_Object\Object\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Crate.cpp">
+      <Filter>03.Tool_Object\Object\Crate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CrateSet.cpp">
+      <Filter>03.Tool_Object\Object\CrateSet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\House.cpp">
+      <Filter>03.Tool_Object\Object\House</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Pillar.cpp">
+      <Filter>03.Tool_Object\Object\Pillar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Rock1.cpp">
+      <Filter>03.Tool_Object\Object\Rock\Rock1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\TunnelDoor.cpp">
+      <Filter>03.Tool_Object\Object\TunnelDoor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\WaterTower.cpp">
+      <Filter>03.Tool_Object\Object\WaterTower</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Yurt.cpp">
+      <Filter>03.Tool_Object\Object\Yurt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Yurt2.cpp">
+      <Filter>03.Tool_Object\Object\Yurt2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MetalBeam.cpp">
+      <Filter>03.Tool_Object\Object\MetalBeam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MetalLadder.cpp">
+      <Filter>03.Tool_Object\Object\MetalLadder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DamWall.cpp">
+      <Filter>03.Tool_Object\Object\DamWall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BarCounter.cpp">
+      <Filter>03.Tool_Object\Object\BarCounter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BedGarbage.cpp">
+      <Filter>03.Tool_Object\Object\BedGarbage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Dropship.cpp">
+      <Filter>03.Tool_Object\Object\Dropship</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\JakobsTank.cpp">
+      <Filter>03.Tool_Object\Object\JakobsTank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DropzoneWall.cpp">
+      <Filter>03.Tool_Object\Object\DropzoneWall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\LynchwoodHotel.cpp">
+      <Filter>03.Tool_Object\Object\LynchwoodHotel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Boat.cpp">
+      <Filter>03.Tool_Object\Object\Boat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ForkLift.cpp">
+      <Filter>03.Tool_Object\Object\ForkLift</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Navi.cpp">
+      <Filter>04.Navi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Navi_Manger.cpp">
+      <Filter>04.Navi\Manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxMesh.hlsl">
+      <Filter>96.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxNorTex.hlsl">
+      <Filter>96.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPosTex.hlsl">
+      <Filter>96.ShaderFiles</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

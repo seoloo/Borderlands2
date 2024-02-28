@@ -1,0 +1,1517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="98.Default">
+      <UniqueIdentifier>{cd633420-f2f2-4dc9-a363-3b2bef6fa817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Headers">
+      <UniqueIdentifier>{7c0bf80e-1226-481c-875c-f094c9486058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.MainApp">
+      <UniqueIdentifier>{c9f1a825-9e8a-49af-8a2e-7b123ac6e4c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels">
+      <UniqueIdentifier>{5b63edef-0651-4257-8f75-a1218d86dfbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\00.Logo">
+      <UniqueIdentifier>{5136b17d-d785-47b9-852e-d4aa1e9ba601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\01.GamePlay">
+      <UniqueIdentifier>{88921314-29be-454f-8a27-60b766988d3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\99.Loading">
+      <UniqueIdentifier>{cfe5f9c8-d427-430b-8111-788ea4d8b296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\99.Loading\Loader">
+      <UniqueIdentifier>{5d9be066-e692-41c3-a232-925425d95675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects">
+      <UniqueIdentifier>{bd50cfe9-d2f4-4c5e-9b25-a2059a28a90e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\00.BackGround">
+      <UniqueIdentifier>{8f03b74a-be0d-4b3a-a3f6-a973e49a50b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="97.ShaderFiles">
+      <UniqueIdentifier>{47b80506-1db7-4ff2-9bc5-c86fc1a27cf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\00.Logo\LogoUI">
+      <UniqueIdentifier>{df990826-b1b6-44ae-b648-2d673d1383df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\99.Loading\LoadingUI">
+      <UniqueIdentifier>{0b5dccf7-5060-41e2-9af4-6da829a5084d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\01.Terrain">
+      <UniqueIdentifier>{2dcfa62f-6e0d-4f4b-a810-ca6556c5cad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.Camera">
+      <UniqueIdentifier>{be50982d-09b2-4245-be4d-0370bdfdab6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.Camera\Camera_Free">
+      <UniqueIdentifier>{4d11fc81-5f69-432d-bc7c-43d19fbe912d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\02.Player">
+      <UniqueIdentifier>{71a93b55-22aa-45b5-8ebe-2160dc603ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster">
+      <UniqueIdentifier>{bc50b7d5-0256-4fe0-8b1c-2d766942668a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher">
+      <UniqueIdentifier>{775374de-e03c-4d4a-be1a-9586b496ba8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI">
+      <UniqueIdentifier>{17a55296-80c2-4842-bbf5-8ee0284a2f66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\98.Sky">
+      <UniqueIdentifier>{002cc35d-15b3-42e4-a217-1c55506d49e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\04.Weapon">
+      <UniqueIdentifier>{cf81d924-3ac1-4223-9eba-640819769b74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\04.Weapon\Bullet">
+      <UniqueIdentifier>{53eaaae0-1c0c-4adc-9a70-a73323865e8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\05.Item">
+      <UniqueIdentifier>{4943e6a4-f068-4fd6-8cda-e01e4a5187d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\05.Item\HealthVial">
+      <UniqueIdentifier>{263742dc-915b-45bb-9527-5872ce5e941e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\04.Weapon\Pistol">
+      <UniqueIdentifier>{f0fb2cb7-1aa6-450f-bf88-28221315abea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.Camera\Camera_OnBone">
+      <UniqueIdentifier>{4d4249c8-512a-41a5-a699-a4f626938694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_Collider">
+      <UniqueIdentifier>{3fa3e725-1fcd-45a1-b4a2-c88654dedaba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_State">
+      <UniqueIdentifier>{db0f531c-8486-4de1-891e-e3da387c1e1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_State\Idle">
+      <UniqueIdentifier>{e74e9443-5856-4868-9716-4c045dc64de0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\99.Camera\Camera_Pistol">
+      <UniqueIdentifier>{d30dc2bb-e162-48d1-a2ac-db4571369db8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt">
+      <UniqueIdentifier>{48647c65-744b-4d5d-8a3c-fd3c2218d8c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_Collider">
+      <UniqueIdentifier>{eb886c3a-ac70-4063-893e-5d008678e8cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Stalker">
+      <UniqueIdentifier>{1d2211ae-458b-4d7d-9c60-323124714986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Stalker\Stalker_Collider">
+      <UniqueIdentifier>{5779697c-b2e4-4a6b-9a04-10f852177fab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Goliath">
+      <UniqueIdentifier>{ce981087-6315-4dcd-8b82-276266f58e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Sight">
+      <UniqueIdentifier>{2273479d-c0c3-4471-b25d-06eb443cb080}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\Fire">
+      <UniqueIdentifier>{3e9e5e55-77ef-42f0-9158-d82b0acc1e8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Stalker\Stalker_Collider\Stalker_HeadCollider">
+      <UniqueIdentifier>{7b2422b1-dfdb-4b44-a35c-1d97b59276d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State">
+      <UniqueIdentifier>{7e800321-fe77-43ff-8a85-fbfdd6fe8cf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Idle">
+      <UniqueIdentifier>{8083dcd5-e11d-47ff-b403-17ce91eace74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Walk">
+      <UniqueIdentifier>{9066af3b-ec3e-4501-91d3-0dbac254e26b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Attack">
+      <UniqueIdentifier>{faf63380-aa22-4c75-95c1-3046cdf17a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_Collider\SpiderAnt_LegCollider">
+      <UniqueIdentifier>{264f52af-4871-4d43-a289-11cbabbd6a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Stalker\Stalker_Collider\Stalker_TailCollider">
+      <UniqueIdentifier>{e120887e-1ad1-4b56-8e22-a6c21914117e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Shoot">
+      <UniqueIdentifier>{894a1ae7-5f4d-4c60-ab8b-9cb969075573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_Collider\SpiderAnt_HeadCollider">
+      <UniqueIdentifier>{0df9e93a-62c5-4593-ab7d-0818c9ce95bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Dig">
+      <UniqueIdentifier>{63ccf526-8d5f-4bdf-9696-b5d3e510c565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Appear">
+      <UniqueIdentifier>{c01a00e0-3ff3-48e8-b066-31118c163084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Attacked">
+      <UniqueIdentifier>{1065936e-7a35-454d-ac46-c64b835eace0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Shoot2">
+      <UniqueIdentifier>{7bac629b-c09f-45e7-9f59-8df50b6987ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Dead">
+      <UniqueIdentifier>{7a9a5082-ed12-4dd1-8e5e-466d04ce0ebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Descend">
+      <UniqueIdentifier>{1640e6d6-d6d7-45f5-8db3-21688e133f5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_State\DIg">
+      <UniqueIdentifier>{e5e2e926-d4e3-4e96-affb-7f3054558d94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_State\Appear">
+      <UniqueIdentifier>{f3cf542f-6e17-47ca-ac33-24e6f57786bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_State\Attack">
+      <UniqueIdentifier>{e2530def-0465-42cd-90e7-c4af2fb4931d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_Arm">
+      <UniqueIdentifier>{f1ad3250-1ea1-404b-bc08-3fc2e98f2feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_Arm\ArmCollider">
+      <UniqueIdentifier>{13b6de83-5425-4301-bdeb-14f1b75f3c2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_Collider\TentacleCollider">
+      <UniqueIdentifier>{80572863-494c-4178-9f25-71845dd660b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_State\FirstAppear">
+      <UniqueIdentifier>{12ce3d64-beca-4d51-b60e-aee8d8020029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_State\Summon">
+      <UniqueIdentifier>{215136a7-b6df-4b12-a43c-765b1aa78717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_State\Dead">
+      <UniqueIdentifier>{48053339-10e1-41a9-8b3e-aa1a6fce9bf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Goliath\Collider">
+      <UniqueIdentifier>{45efc9fe-4d3a-4bcc-a3fa-e41ac652c756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Goliath\Collider\HeadCollider">
+      <UniqueIdentifier>{7e0ac296-97e3-48b0-8bf0-79b0f58f2ae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Goliath\Collider\ArmCollider">
+      <UniqueIdentifier>{a90c4adf-b034-40c8-a83b-3ead5a5d20e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Goliath\Collider\BodyCollider">
+      <UniqueIdentifier>{52d62c52-535b-4cb1-98d2-5fb525ea095a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Psycho">
+      <UniqueIdentifier>{7d5c2d83-b3b7-43a5-9c1a-ba97727a1cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Psycho\Collider">
+      <UniqueIdentifier>{4d47052d-8af8-4e79-b16a-417890c6f450}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Psycho\Face">
+      <UniqueIdentifier>{07581da6-c12b-447d-9a1c-57807d76faed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Psycho\Axe">
+      <UniqueIdentifier>{a93a4355-8230-43a8-8274-312963ef1ddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Psycho\Collider\Body">
+      <UniqueIdentifier>{f7b000c1-a891-4512-9577-4b7bca58cefc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Psycho\Collider\Leg">
+      <UniqueIdentifier>{e5e700a2-b783-40eb-a474-d76ffe84fdae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_Arm2">
+      <UniqueIdentifier>{584c07e7-7b54-4828-9146-49a522eb4270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_Arm2\Thresher_ArmCollider">
+      <UniqueIdentifier>{527ebb1b-b713-4262-8025-2ba42c90d085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_Melee">
+      <UniqueIdentifier>{f1a2577c-d76b-4f14-8075-d0c008377b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_Melee\Collider">
+      <UniqueIdentifier>{c9428e97-7783-47ed-9408-1c5e0ef0fb32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_State\SecondAppear">
+      <UniqueIdentifier>{d9a5f4f0-8074-4686-b380-bee3ae30c38d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject">
+      <UniqueIdentifier>{b214bb52-c35c-4270-9878-9c6208bc99d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\AridDistanceTerrain">
+      <UniqueIdentifier>{03d65864-4dc4-4526-8912-3d569bc77c42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\IceBlock01">
+      <UniqueIdentifier>{7ea79592-7b32-4fa5-96f7-ae7fa7da3995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\Large_Rock">
+      <UniqueIdentifier>{f945e4de-7574-4d9b-9b89-98c34697a0ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\Large_Rock\Large_Rock1">
+      <UniqueIdentifier>{1b7fa1e6-71b6-422c-af08-7ed1416914c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\DamWall">
+      <UniqueIdentifier>{50bb00a3-ade5-48d3-a15b-51bc5511155c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\Container">
+      <UniqueIdentifier>{588fe8c4-ae40-4cd1-b8f7-b765b35fa8d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\TunnelDoor">
+      <UniqueIdentifier>{b829c4b1-072c-439d-937b-ff9fb16d2479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\CircularSupport">
+      <UniqueIdentifier>{0eb5b762-5994-4da5-8d2c-367f86c0e04f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\WaterTower">
+      <UniqueIdentifier>{ac97ef42-1c16-4bf9-bb56-2d8886de7928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\House">
+      <UniqueIdentifier>{5f24b18a-bc41-43ec-b528-c5cf2dc2228e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\CrateSet">
+      <UniqueIdentifier>{4df8df12-4c49-4905-818f-4e79a96d4dff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\MetalBeam">
+      <UniqueIdentifier>{761681c2-17e4-418c-bb01-35feb54c16dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\MetalLadder">
+      <UniqueIdentifier>{f1ffd6b8-977e-4748-a4cf-62ad094e036b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\Pillar">
+      <UniqueIdentifier>{ee1c28fd-4878-4c6d-8308-968f7f1ee35a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\BarCounter">
+      <UniqueIdentifier>{2e2ff482-b5ca-4020-8912-83826844d1de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\BedGarbage">
+      <UniqueIdentifier>{fbfaf344-4eb3-4130-8da8-c464e3dbb247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\Boat">
+      <UniqueIdentifier>{d5f4ccc5-06af-431a-81fd-779e28594fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\Dropship">
+      <UniqueIdentifier>{37ea0534-c95f-4669-a47a-3cf6a8a0d34f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\DropzoneWall">
+      <UniqueIdentifier>{7776e7e6-8fa5-426a-ab53-b8ef8e8e78b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\JakobsTank">
+      <UniqueIdentifier>{a3a5d4df-e402-46a8-acf1-127943bdb621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\LynchwoodHotel">
+      <UniqueIdentifier>{4b4cc1c8-9cce-4b1c-96c1-b18f068dd9c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\Yurt">
+      <UniqueIdentifier>{1ad184f1-d1e0-4579-8d3a-e8e7a3f98eef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.StaticObject\Yurt2">
+      <UniqueIdentifier>{eda27e9a-a3fb-45e9-bce9-eb8fe08a1cfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect">
+      <UniqueIdentifier>{10d5259b-4753-421a-bd1f-cc393d092f47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Blend">
+      <UniqueIdentifier>{51ea2200-ccd4-4b45-8046-597bc6b50a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle">
+      <UniqueIdentifier>{5137e861-3b04-4c83-9351-3c0b3f7aeb08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Rock">
+      <UniqueIdentifier>{b6391d54-bc64-411e-be73-ab6043087cb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Rock\AppearRock">
+      <UniqueIdentifier>{5f7bd8b7-f567-4d35-b703-79c8dcba77a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Blast">
+      <UniqueIdentifier>{07ca9797-c5bc-4061-bc58-625335d2363a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Blood">
+      <UniqueIdentifier>{e1d58086-a790-408b-8f3f-ad2de2173d28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Catridge">
+      <UniqueIdentifier>{06dfa15a-b8f7-47fe-8b5f-f1c2cce5ea2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\06.NPC">
+      <UniqueIdentifier>{dc4e8f75-bbea-4644-b13b-af1f92d3e9cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\06.NPC\ClapTrap">
+      <UniqueIdentifier>{02700edd-d9d9-497a-9314-0a797cefd7ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Explosion">
+      <UniqueIdentifier>{8c120b06-3a00-4ed9-a06f-23ea911fc96f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Fog">
+      <UniqueIdentifier>{4ff14e64-99d6-4841-9d22-74cfad6cd589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Goliath\Collider\LegCollider">
+      <UniqueIdentifier>{035ba4cf-9e1d-4b34-9907-fc024e10eb34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\06.NPC\Hammerlock">
+      <UniqueIdentifier>{25b37ed4-6774-4620-9f14-da11e1eaf8b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Skag">
+      <UniqueIdentifier>{65704dd5-3e10-456c-9118-06c3e788e18d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\02.Town">
+      <UniqueIdentifier>{de889783-f006-4aa7-ac9c-4b1541ee3843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Lightning">
+      <UniqueIdentifier>{938e548e-42ea-408d-8f70-34282b55db9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Muzzle">
+      <UniqueIdentifier>{da6608c5-7653-4393-b9d5-e605c9997250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Psycho\Psycho2">
+      <UniqueIdentifier>{53fd5c41-6484-4dbd-a375-b6b5594dcfee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Psycho\Psycho3">
+      <UniqueIdentifier>{4bd3a894-bdee-4ad5-85b8-fced0030b60a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Skag\Collider">
+      <UniqueIdentifier>{1eedb1e5-30f0-4590-8659-568c973b69cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Skag\Collider\Head">
+      <UniqueIdentifier>{8ff82714-ef7c-48dc-a004-1aa69d178e81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Skag\Collider\Toungue">
+      <UniqueIdentifier>{5c618cb4-2e70-4df7-8fe6-139f95ef4ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Smoke">
+      <UniqueIdentifier>{13060860-4120-45ab-9dbe-4eaec8c6aa5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Snowing">
+      <UniqueIdentifier>{d540ddbb-4dba-4dcf-b9ca-7a7a8b664d55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\SnowBlue">
+      <UniqueIdentifier>{b086e20b-1d3c-4ff5-9c5f-ec7d266b2620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Thresher\Thresher_Collider\ArmsTopCollider">
+      <UniqueIdentifier>{4a375aa5-4e2e-4856-8530-9b092f97986b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\02.Player\TownPlayer">
+      <UniqueIdentifier>{91f90b41-bc2f-4785-968b-11e908f5a842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Zoom">
+      <UniqueIdentifier>{ebda1ddd-61e4-483f-b6a3-5a884f01b7c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Skag\Horn">
+      <UniqueIdentifier>{e22e225f-ebb2-4df1-9433-121475297057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\EMPBlue">
+      <UniqueIdentifier>{0cc0572b-21cf-44c2-8f17-96c7f0a85c52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\EMPBlue\EMPRed">
+      <UniqueIdentifier>{04c3981b-8d4b-4e33-be4c-503206af5a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Vapor">
+      <UniqueIdentifier>{6c02e6dd-38ef-422f-a553-7ca250a2bf15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\ShieldUI">
+      <UniqueIdentifier>{a139e05b-6b02-4b24-b3dd-1e07bb39dcb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\AttackedUI">
+      <UniqueIdentifier>{96aa2139-95aa-4be3-abb6-f360d9ad3cd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Bar">
+      <UniqueIdentifier>{2585a53c-8d9b-4eb0-8139-de640c98667b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Bar\GunBar">
+      <UniqueIdentifier>{bd18537d-86df-493b-8e19-5fef5e52812a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Bar\HpBar">
+      <UniqueIdentifier>{8f17318d-6c1f-4631-a9ef-50b52b4f60e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Bar\ShieldBar">
+      <UniqueIdentifier>{13e6bbec-7b9c-4ecc-b58e-8e0049c4bdb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Border">
+      <UniqueIdentifier>{42c8bbee-a0c4-45b1-83ab-4605b596221e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Border\ShieldBorder">
+      <UniqueIdentifier>{81c8dfae-2ebb-4897-a86a-6105a04f2c04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Border\HpBorder">
+      <UniqueIdentifier>{fda5355f-c354-4a53-bdb9-87f8b41c1e5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Icon">
+      <UniqueIdentifier>{d948e94a-089e-449e-a72f-bf0353f40c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Icon\ShieldIcon">
+      <UniqueIdentifier>{78ae12f2-eb06-4886-8386-fd949b1ccfd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Icon\GunIcon">
+      <UniqueIdentifier>{7e0af18b-a9d5-4a52-9602-a8376211deab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Icon\HpIcon">
+      <UniqueIdentifier>{aa9a4cf1-693f-4f6a-9fd2-43773db482b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Border\GunBorder">
+      <UniqueIdentifier>{b41bad8e-d566-4700-aa6d-2ed97a6738da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Infinity">
+      <UniqueIdentifier>{0760c152-e1d2-4a29-8396-ff285f8ffcb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\TextureUI">
+      <UniqueIdentifier>{045529b1-0869-46c3-ab73-98ebc22de79a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Goliath\Goliath2">
+      <UniqueIdentifier>{e37d0a1f-9946-4384-8325-cdb5d36fd0db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\03.Monster\Goliath\Goliath3">
+      <UniqueIdentifier>{617ab67c-421a-4406-b8cf-039154ce9eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\MissionUI">
+      <UniqueIdentifier>{132164d8-6ab6-478b-9704-5ee11bf32dbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\MissionUI\MissionFont">
+      <UniqueIdentifier>{acde47db-cd90-425c-bf0b-83d4988184d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Border\EXPBorder">
+      <UniqueIdentifier>{0f3e3c12-d7ef-457e-bd64-4caa45d3f92e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Bar\EXPBar">
+      <UniqueIdentifier>{b7cbdcac-a144-4c93-8441-dc4d31cae680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Bar\MonsterHpBar">
+      <UniqueIdentifier>{f88fc469-f26e-47cd-a003-0d042356b4be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\ThresherUI">
+      <UniqueIdentifier>{74a2983d-b042-4c15-8402-dfa48ecb4d31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Energy">
+      <UniqueIdentifier>{f699c1b9-875f-4566-a2e5-af88125c90a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\05.Item\TreasureChest">
+      <UniqueIdentifier>{98ec55b8-fadb-4f5e-a7ab-1d68ef931bfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\05.Item\AmmoPickUp">
+      <UniqueIdentifier>{b0a7ca50-dd4a-4419-a28a-fbad4a6109d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Font">
+      <UniqueIdentifier>{123f7a5c-45ab-4973-ba07-d77f3f3a376e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Font\InteractionFont">
+      <UniqueIdentifier>{32df043b-4b0d-4878-990d-f606f2717b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Font\UIFont">
+      <UniqueIdentifier>{1d826ddb-cf58-46c9-8b4d-d22b185b6134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Key_G">
+      <UniqueIdentifier>{f51dfe6e-594c-4321-b408-228bf89d8f75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Font\TextFont">
+      <UniqueIdentifier>{61ccccb1-ec14-40e3-9ea3-54abfc2c67e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Levels\03.Ending">
+      <UniqueIdentifier>{27387106-3b25-4f77-a032-e7a28e76327d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\CutScene">
+      <UniqueIdentifier>{78fd6dd7-81e6-4c17-9e3e-ab56d53d533e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\06.NPC\Roland">
+      <UniqueIdentifier>{3ead0202-6d82-44bc-b674-1c4cacec3e7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\06.NPC\Lilth">
+      <UniqueIdentifier>{98d13402-c205-4c1d-8fae-2b0b51e1942d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObjects\06.NPC\Mordecai">
+      <UniqueIdentifier>{90a0c024-b2b3-40d7-ab8d-2b9cf5f2864b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Effect\Paticle\Dust">
+      <UniqueIdentifier>{beac5d80-4c65-4f9c-b8b3-15e3cd7d172d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Damage">
+      <UniqueIdentifier>{325e6b13-e0fb-4b11-9eef-7fc464fe3a32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Damage\Critical">
+      <UniqueIdentifier>{6a04a98f-9a41-4653-94ae-13323ef9a4c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.UI\Font\AreaFont">
+      <UniqueIdentifier>{2c955cbf-e172-4e92-9ed4-7c20b4e215ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Client.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MainApp.h">
+      <Filter>00.MainApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_GamePlay.h">
+      <Filter>01.Levels\01.GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Logo.h">
+      <Filter>01.Levels\00.Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Loading.h">
+      <Filter>01.Levels\99.Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Loader.h">
+      <Filter>01.Levels\99.Loading\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\BackGround.h">
+      <Filter>02.GameObjects\00.BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\LogoUI.h">
+      <Filter>01.Levels\00.Logo\LogoUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\LoadingUI.h">
+      <Filter>01.Levels\99.Loading\LoadingUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Terrain.h">
+      <Filter>02.GameObjects\01.Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Camera_Free.h">
+      <Filter>02.GameObjects\99.Camera\Camera_Free</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Player.h">
+      <Filter>02.GameObjects\02.Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher.h">
+      <Filter>02.GameObjects\03.Monster\Thresher</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\HpBar.h">
+      <Filter>03.UI\Bar\HpBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\HpIcon.h">
+      <Filter>03.UI\Icon\HpIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\HpBorder.h">
+      <Filter>03.UI\Border\HpBorder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GunBar.h">
+      <Filter>03.UI\Bar\GunBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GunIcon.h">
+      <Filter>03.UI\Icon\GunIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Sky.h">
+      <Filter>02.GameObjects\98.Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Missile.h">
+      <Filter>02.GameObjects\04.Weapon\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Pistol.h">
+      <Filter>02.GameObjects\04.Weapon\Pistol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Camera_OnBone.h">
+      <Filter>02.GameObjects\99.Camera\Camera_OnBone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_Collider.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_State.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_Idle.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\Idle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Camera_Pistol.h">
+      <Filter>02.GameObjects\99.Camera\Camera_Pistol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\AridDistanceTerrain.h">
+      <Filter>05.StaticObject\AridDistanceTerrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bin\ShaderFiles\Shader_Defines.hpp">
+      <Filter>97.ShaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\IceBlock01.h">
+      <Filter>05.StaticObject\IceBlock01</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Large_Rock1.h">
+      <Filter>05.StaticObject\Large_Rock\Large_Rock1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DamWall.h">
+      <Filter>05.StaticObject\DamWall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Container.h">
+      <Filter>05.StaticObject\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\TunnelDoor.h">
+      <Filter>05.StaticObject\TunnelDoor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CircularSupport.h">
+      <Filter>05.StaticObject\CircularSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\WaterTower.h">
+      <Filter>05.StaticObject\WaterTower</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\House.h">
+      <Filter>05.StaticObject\House</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CrateSet.h">
+      <Filter>05.StaticObject\CrateSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MetalBeam.h">
+      <Filter>05.StaticObject\MetalBeam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MetalLadder.h">
+      <Filter>05.StaticObject\MetalLadder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Pillar.h">
+      <Filter>05.StaticObject\Pillar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_Collider.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BarCounter.h">
+      <Filter>05.StaticObject\BarCounter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BedGarbage.h">
+      <Filter>05.StaticObject\BedGarbage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Boat.h">
+      <Filter>05.StaticObject\Boat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Dropship.h">
+      <Filter>05.StaticObject\Dropship</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DropzoneWall.h">
+      <Filter>05.StaticObject\DropzoneWall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\JakobsTank.h">
+      <Filter>05.StaticObject\JakobsTank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\LynchwoodHotel.h">
+      <Filter>05.StaticObject\LynchwoodHotel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Yurt.h">
+      <Filter>05.StaticObject\Yurt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Yurt2.h">
+      <Filter>05.StaticObject\Yurt2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Stalker.h">
+      <Filter>02.GameObjects\03.Monster\Stalker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Stalker_Collider.h">
+      <Filter>02.GameObjects\03.Monster\Stalker\Stalker_Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Goliath.h">
+      <Filter>02.GameObjects\03.Monster\Goliath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Sight.h">
+      <Filter>03.UI\Sight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Monster_Fire.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\Fire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Stalker_HeaderCollider.h">
+      <Filter>02.GameObjects\03.Monster\Stalker\Stalker_Collider\Stalker_HeadCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_State.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_Idle.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Idle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_Walk.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Walk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_Attack.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_LegCollider.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_Collider\SpiderAnt_LegCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Stalker_TailCollider.h">
+      <Filter>02.GameObjects\03.Monster\Stalker\Stalker_Collider\Stalker_TailCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_Shoot.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Shoot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_HeadCollider.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_Collider\SpiderAnt_HeadCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_Dig.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Dig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_Appear.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Appear</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_Attacked.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Attacked</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_Shoot2.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Shoot2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_Dead.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Dead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpiderAnt_Descend.h">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Descend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_TentacleCollider.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Collider\TentacleCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_Dig.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\DIg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_Appear.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\Appear</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_Attack.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_Arm.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_ArmCollider.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Arm\ArmCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_Summon.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\Summon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_FirstAppear.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\FirstAppear</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_Dead.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\Dead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Goliath_HeadCollider.h">
+      <Filter>02.GameObjects\03.Monster\Goliath\Collider\HeadCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Goliath_ArmCollider.h">
+      <Filter>02.GameObjects\03.Monster\Goliath\Collider\ArmCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Goliath_BodyCollider.h">
+      <Filter>02.GameObjects\03.Monster\Goliath\Collider\BodyCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Psycho.h">
+      <Filter>02.GameObjects\03.Monster\Psycho</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Axe.h">
+      <Filter>02.GameObjects\03.Monster\Psycho\Axe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Psycho_Face.h">
+      <Filter>02.GameObjects\03.Monster\Psycho\Face</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Psycho_BodyCollider.h">
+      <Filter>02.GameObjects\03.Monster\Psycho\Collider\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Psycho_LegCollider.h">
+      <Filter>02.GameObjects\03.Monster\Psycho\Collider\Leg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_Arm2.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Arm2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_Arm2Collider.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Arm2\Thresher_ArmCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_Melee.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Melee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_MeleeCollider.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Melee\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_SecondAppear.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\SecondAppear</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>98.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\AppearRock.h">
+      <Filter>04.Effect\Paticle\Rock\AppearRock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Lightning.h">
+      <Filter>04.Effect\Paticle\Lightning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Explosion.h">
+      <Filter>04.Effect\Paticle\Explosion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Psycho3.h">
+      <Filter>02.GameObjects\03.Monster\Psycho\Psycho3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Psycho2.h">
+      <Filter>02.GameObjects\03.Monster\Psycho\Psycho2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Muzzle.h">
+      <Filter>04.Effect\Paticle\Muzzle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Smoke.h">
+      <Filter>04.Effect\Paticle\Smoke</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skag.h">
+      <Filter>02.GameObjects\03.Monster\Skag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Blast.h">
+      <Filter>04.Effect\Paticle\Blast</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Town.h">
+      <Filter>01.Levels\02.Town</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Horn.h">
+      <Filter>02.GameObjects\03.Monster\Skag\Horn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ClapTrap.h">
+      <Filter>02.GameObjects\06.NPC\ClapTrap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Hammerlock.h">
+      <Filter>02.GameObjects\06.NPC\Hammerlock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Thresher_ArmsTopCollider.h">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Collider\ArmsTopCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Fog.h">
+      <Filter>04.Effect\Paticle\Fog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Catridge.h">
+      <Filter>04.Effect\Paticle\Catridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Zoom.h">
+      <Filter>03.UI\Zoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\TownPlayer.h">
+      <Filter>02.GameObjects\02.Player\TownPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Rock.h">
+      <Filter>04.Effect\Paticle\Rock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Snowing.h">
+      <Filter>04.Effect\Paticle\Snowing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Snow_Blue.h">
+      <Filter>04.Effect\Paticle\SnowBlue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Blood.h">
+      <Filter>04.Effect\Paticle\Blood</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Goliath_LegCollider.h">
+      <Filter>02.GameObjects\03.Monster\Goliath\Collider\LegCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skag_Collider.h">
+      <Filter>02.GameObjects\03.Monster\Skag\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skag_HeadCollider.h">
+      <Filter>02.GameObjects\03.Monster\Skag\Collider\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skag_ToungueCollider.h">
+      <Filter>02.GameObjects\03.Monster\Skag\Collider\Toungue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EMPBlue.h">
+      <Filter>04.Effect\Paticle\EMPBlue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Vapor.h">
+      <Filter>04.Effect\Paticle\Vapor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EMPRed.h">
+      <Filter>04.Effect\Paticle\EMPBlue\EMPRed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ShieldBar.h">
+      <Filter>03.UI\Bar\ShieldBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Client_Defines.h">
+      <Filter>99.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ShieldIcon.h">
+      <Filter>03.UI\Icon\ShieldIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ShieldBorder.h">
+      <Filter>03.UI\Border\ShieldBorder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GunBorder.h">
+      <Filter>03.UI\Border\GunBorder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Infinity.h">
+      <Filter>03.UI\Infinity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\TextUI.h">
+      <Filter>03.UI\TextureUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MissionBox.h">
+      <Filter>03.UI\MissionUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MissionFont.h">
+      <Filter>03.UI\MissionUI\MissionFont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EXPBorder.h">
+      <Filter>03.UI\Border\EXPBorder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EXPBar.h">
+      <Filter>03.UI\Bar\EXPBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MonsterHpBar.h">
+      <Filter>03.UI\Bar\MonsterHpBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ThresherUI.h">
+      <Filter>03.UI\ThresherUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Goliath2.h">
+      <Filter>02.GameObjects\03.Monster\Goliath\Goliath2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Goliath3.h">
+      <Filter>02.GameObjects\03.Monster\Goliath\Goliath3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Energy.h">
+      <Filter>04.Effect\Paticle\Energy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\TreasureChest.h">
+      <Filter>02.GameObjects\05.Item\TreasureChest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\HealthVial.h">
+      <Filter>02.GameObjects\05.Item\HealthVial</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\AmmoPickUp.h">
+      <Filter>02.GameObjects\05.Item\AmmoPickUp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UIFont.h">
+      <Filter>03.UI\Font\UIFont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\InteractionFont.h">
+      <Filter>03.UI\Font\InteractionFont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Key_G.h">
+      <Filter>03.UI\Key_G</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\TextFont.h">
+      <Filter>03.UI\Font\TextFont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Ending.h">
+      <Filter>01.Levels\03.Ending</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ShieldUI.h">
+      <Filter>03.UI\ShieldUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\AttackedUI.h">
+      <Filter>03.UI\AttackedUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CutScene.h">
+      <Filter>03.UI\CutScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Roland.h">
+      <Filter>02.GameObjects\06.NPC\Roland</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Lilth.h">
+      <Filter>02.GameObjects\06.NPC\Lilth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Mordecai.h">
+      <Filter>02.GameObjects\06.NPC\Mordecai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Dust.h">
+      <Filter>04.Effect\Paticle\Dust</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DamageFont.h">
+      <Filter>03.UI\Damage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Critical.h">
+      <Filter>03.UI\Damage\Critical</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\AreaFont.h">
+      <Filter>03.UI\Font\AreaFont</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Client.cpp">
+      <Filter>98.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>98.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MainApp.cpp">
+      <Filter>00.MainApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_GamePlay.cpp">
+      <Filter>01.Levels\01.GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Logo.cpp">
+      <Filter>01.Levels\00.Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Loading.cpp">
+      <Filter>01.Levels\99.Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Loader.cpp">
+      <Filter>01.Levels\99.Loading\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\BackGround.cpp">
+      <Filter>02.GameObjects\00.BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\LogoUI.cpp">
+      <Filter>01.Levels\00.Logo\LogoUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\LoadingUI.cpp">
+      <Filter>01.Levels\99.Loading\LoadingUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Terrain.cpp">
+      <Filter>02.GameObjects\01.Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Camera_Free.cpp">
+      <Filter>02.GameObjects\99.Camera\Camera_Free</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Player.cpp">
+      <Filter>02.GameObjects\02.Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\HpBar.cpp">
+      <Filter>03.UI\Bar\HpBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\HpIcon.cpp">
+      <Filter>03.UI\Icon\HpIcon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\HpBorder.cpp">
+      <Filter>03.UI\Border\HpBorder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GunBar.cpp">
+      <Filter>03.UI\Bar\GunBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GunIcon.cpp">
+      <Filter>03.UI\Icon\GunIcon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Sky.cpp">
+      <Filter>02.GameObjects\98.Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Missile.cpp">
+      <Filter>02.GameObjects\04.Weapon\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Pistol.cpp">
+      <Filter>02.GameObjects\04.Weapon\Pistol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Camera_OnBone.cpp">
+      <Filter>02.GameObjects\99.Camera\Camera_OnBone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_Collider.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_State.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_Idle.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\Idle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Camera_Pistol.cpp">
+      <Filter>02.GameObjects\99.Camera\Camera_Pistol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\AridDistanceTerrain.cpp">
+      <Filter>05.StaticObject\AridDistanceTerrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\IceBlock01.cpp">
+      <Filter>05.StaticObject\IceBlock01</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Large_Rock1.cpp">
+      <Filter>05.StaticObject\Large_Rock\Large_Rock1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DamWall.cpp">
+      <Filter>05.StaticObject\DamWall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Container.cpp">
+      <Filter>05.StaticObject\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\TunnelDoor.cpp">
+      <Filter>05.StaticObject\TunnelDoor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CircularSupport.cpp">
+      <Filter>05.StaticObject\CircularSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\WaterTower.cpp">
+      <Filter>05.StaticObject\WaterTower</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\House.cpp">
+      <Filter>05.StaticObject\House</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CrateSet.cpp">
+      <Filter>05.StaticObject\CrateSet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MetalBeam.cpp">
+      <Filter>05.StaticObject\MetalBeam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MetalLadder.cpp">
+      <Filter>05.StaticObject\MetalLadder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Pillar.cpp">
+      <Filter>05.StaticObject\Pillar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_Collider.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BarCounter.cpp">
+      <Filter>05.StaticObject\BarCounter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BedGarbage.cpp">
+      <Filter>05.StaticObject\BedGarbage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Boat.cpp">
+      <Filter>05.StaticObject\Boat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Dropship.cpp">
+      <Filter>05.StaticObject\Dropship</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DropzoneWall.cpp">
+      <Filter>05.StaticObject\DropzoneWall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\JakobsTank.cpp">
+      <Filter>05.StaticObject\JakobsTank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\LynchwoodHotel.cpp">
+      <Filter>05.StaticObject\LynchwoodHotel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Yurt.cpp">
+      <Filter>05.StaticObject\Yurt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Yurt2.cpp">
+      <Filter>05.StaticObject\Yurt2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Stalker.cpp">
+      <Filter>02.GameObjects\03.Monster\Stalker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Stalker_Collider.cpp">
+      <Filter>02.GameObjects\03.Monster\Stalker\Stalker_Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Goliath.cpp">
+      <Filter>02.GameObjects\03.Monster\Goliath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Sight.cpp">
+      <Filter>03.UI\Sight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Monster_Fire.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\Fire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Stalker_HeaderCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Stalker\Stalker_Collider\Stalker_HeadCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_State.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_Idle.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Idle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_Walk.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Walk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_Attack.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_LegCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_Collider\SpiderAnt_LegCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Stalker_TailCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Stalker\Stalker_Collider\Stalker_TailCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_Shoot.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Shoot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_HeadCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_Collider\SpiderAnt_HeadCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_DIg.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Dig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_Appear.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Appear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_Attacked.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Attacked</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_Shoot2.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Shoot2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_Dead.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Dead</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpiderAnt_Descend.cpp">
+      <Filter>02.GameObjects\03.Monster\SpiderAnt\SpiderAnt_State\Descend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_TentacleCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Collider\TentacleCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_Dig.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\DIg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_Appear.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\Appear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_Attack.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_Arm.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_ArmCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Arm\ArmCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_Summon.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\Summon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_FirstAppear.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\FirstAppear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_Dead.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\Dead</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Goliath_HeadCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Goliath\Collider\HeadCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Goliath_ArmCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Goliath\Collider\ArmCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Goliath_BodyCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Goliath\Collider\BodyCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Psycho.cpp">
+      <Filter>02.GameObjects\03.Monster\Psycho</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Axe.cpp">
+      <Filter>02.GameObjects\03.Monster\Psycho\Axe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Psycho_Face.cpp">
+      <Filter>02.GameObjects\03.Monster\Psycho\Face</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Psycho_BodyCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Psycho\Collider\Body</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Psycho_LegCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Psycho\Collider\Leg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_Arm2.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Arm2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_Arm2Collider.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Arm2\Thresher_ArmCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_Melee.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Melee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_MeleeCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Melee\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_SecondAppear.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_State\SecondAppear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Town.cpp">
+      <Filter>01.Levels\02.Town</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Lightning.cpp">
+      <Filter>04.Effect\Paticle\Lightning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Explosion.cpp">
+      <Filter>04.Effect\Paticle\Explosion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skag.cpp">
+      <Filter>02.GameObjects\03.Monster\Skag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Psycho2.cpp">
+      <Filter>02.GameObjects\03.Monster\Psycho\Psycho2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Psycho3.cpp">
+      <Filter>02.GameObjects\03.Monster\Psycho\Psycho3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Hammerlock.cpp">
+      <Filter>02.GameObjects\06.NPC\Hammerlock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Muzzle.cpp">
+      <Filter>04.Effect\Paticle\Muzzle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\TownPlayer.cpp">
+      <Filter>02.GameObjects\02.Player\TownPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Smoke.cpp">
+      <Filter>04.Effect\Paticle\Smoke</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Blast.cpp">
+      <Filter>04.Effect\Paticle\Blast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Rock.cpp">
+      <Filter>04.Effect\Paticle\Rock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Horn.cpp">
+      <Filter>02.GameObjects\03.Monster\Skag\Horn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skag_HeadCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Skag\Collider\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skag_ToungueCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Skag\Collider\Toungue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skag_Collider.cpp">
+      <Filter>02.GameObjects\03.Monster\Skag\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ClapTrap.cpp">
+      <Filter>02.GameObjects\06.NPC\ClapTrap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Thresher_ArmsTopCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Thresher\Thresher_Collider\ArmsTopCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Fog.cpp">
+      <Filter>04.Effect\Paticle\Fog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\AppearRock.cpp">
+      <Filter>04.Effect\Paticle\Rock\AppearRock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Snowing.cpp">
+      <Filter>04.Effect\Paticle\Snowing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Catridge.cpp">
+      <Filter>04.Effect\Paticle\Catridge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Zoom.cpp">
+      <Filter>03.UI\Zoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Blood.cpp">
+      <Filter>04.Effect\Paticle\Blood</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Snow_Blue.cpp">
+      <Filter>04.Effect\Paticle\SnowBlue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Goliath_LegCollider.cpp">
+      <Filter>02.GameObjects\03.Monster\Goliath\Collider\LegCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\EMPBlue.cpp">
+      <Filter>04.Effect\Paticle\EMPBlue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Vapor.cpp">
+      <Filter>04.Effect\Paticle\Vapor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\EMPRed.cpp">
+      <Filter>04.Effect\Paticle\EMPBlue\EMPRed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ShieldBar.cpp">
+      <Filter>03.UI\Bar\ShieldBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ShieldIcon.cpp">
+      <Filter>03.UI\Icon\ShieldIcon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ShieldBorder.cpp">
+      <Filter>03.UI\Border\ShieldBorder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GunBorder.cpp">
+      <Filter>03.UI\Border\GunBorder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Infinity.cpp">
+      <Filter>03.UI\Infinity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\TextUI.cpp">
+      <Filter>03.UI\TextureUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MissionBox.cpp">
+      <Filter>03.UI\MissionUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MissionFont.cpp">
+      <Filter>03.UI\MissionUI\MissionFont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\EXPBorder.cpp">
+      <Filter>03.UI\Border\EXPBorder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\EXPBar.cpp">
+      <Filter>03.UI\Bar\EXPBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MonsterHpBar.cpp">
+      <Filter>03.UI\Bar\MonsterHpBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ThresherUI.cpp">
+      <Filter>03.UI\ThresherUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Goliath2.cpp">
+      <Filter>02.GameObjects\03.Monster\Goliath\Goliath2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Goliath3.cpp">
+      <Filter>02.GameObjects\03.Monster\Goliath\Goliath3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Energy.cpp">
+      <Filter>04.Effect\Paticle\Energy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\TreasureChest.cpp">
+      <Filter>02.GameObjects\05.Item\TreasureChest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\HealthVial.cpp">
+      <Filter>02.GameObjects\05.Item\HealthVial</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\AmmoPickUp.cpp">
+      <Filter>02.GameObjects\05.Item\AmmoPickUp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\InteractionFont.cpp">
+      <Filter>03.UI\Font\InteractionFont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UIFont.cpp">
+      <Filter>03.UI\Font\UIFont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Key_G.cpp">
+      <Filter>03.UI\Key_G</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\TextFont.cpp">
+      <Filter>03.UI\Font\TextFont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Ending.cpp">
+      <Filter>01.Levels\03.Ending</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ShieldUI.cpp">
+      <Filter>03.UI\ShieldUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\AttackedUI.cpp">
+      <Filter>03.UI\AttackedUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CutScene.cpp">
+      <Filter>03.UI\CutScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Roland.cpp">
+      <Filter>02.GameObjects\06.NPC\Roland</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Lilth.cpp">
+      <Filter>02.GameObjects\06.NPC\Lilth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Mordecai.cpp">
+      <Filter>02.GameObjects\06.NPC\Mordecai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Dust.cpp">
+      <Filter>04.Effect\Paticle\Dust</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DamageFont.cpp">
+      <Filter>03.UI\Damage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Critical.cpp">
+      <Filter>03.UI\Damage\Critical</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\AreaFont.cpp">
+      <Filter>03.UI\Font\AreaFont</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Client.ico">
+      <Filter>98.Default</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>98.Default</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc">
+      <Filter>98.Default</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>98.Default</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPosTex.hlsl">
+      <Filter>97.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxNorTex.hlsl">
+      <Filter>97.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxMesh.hlsl">
+      <Filter>97.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxCubeTex.hlsl">
+      <Filter>97.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxRectInstance.hlsl">
+      <Filter>97.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPointInstance.hlsl">
+      <Filter>97.ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxAnimMesh.hlsl">
+      <Filter>97.ShaderFiles</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
