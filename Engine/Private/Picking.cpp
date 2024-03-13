@@ -86,8 +86,7 @@ void CPicking::Tick()
 void CPicking::Transform_ToLocalSpace(const _float4x4& WorldMatrix)
 {
 	_matrix WorldMatrixInv = XMLoadFloat4x4(&WorldMatrix);
-	WorldMatrixInv = XMMatrixInverse(nullptr, WorldMatrixInv); // 역변환해서
-	// _XmLoad-- > _float3 을 _vector 바꾼 다음
+	WorldMatrixInv = XMMatrixInverse(nullptr, WorldMatrixInv);
 
 	_vector vMouseRayPos_Local;
 	_vector vMouseRay_Local;
@@ -107,8 +106,8 @@ void CPicking::Transform_ToLocalSpace(const _float4x4& WorldMatrix)
 
 _bool CPicking::Intersect_Triangle_InLocal(const _vector pPointA, const _vector pPointB, const _vector pPointC, _float3* pOut)
 {
-	_float		fDist = 0.f;
-	_bool		isColl = { false };
+	float		fDist = 0.f;
+	bool		isColl = { false };
 
 	_vector    vMouseRayPos;
 	_vector    vMouseRay;

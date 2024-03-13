@@ -35,7 +35,6 @@ HRESULT CObject_Manager::Reserve_Manager(_uint iNumLevels)
 
 HRESULT CObject_Manager::Add_Prototype(const wstring& strPrototypeTag, CGameObject* pPrototype)
 {
-	/* 중복된 키로 추가하면 안되니까.*/
 	if (nullptr != Find_Prototype(strPrototypeTag))
 		return E_FAIL;
 
@@ -46,20 +45,18 @@ HRESULT CObject_Manager::Add_Prototype(const wstring& strPrototypeTag, CGameObje
 
 HRESULT CObject_Manager::Add_GameObject(_uint iLevelIndex, const wstring& strLayerTag, const wstring& strPrototypeTag, void* pArg)
 {
-	/* 원형을 차즌ㄴ다. */
 	CGameObject* pPrototype = Find_Prototype(strPrototypeTag);
+
 	if (nullptr == pPrototype)
 		return E_FAIL;
 
-	/* 원형을 복제하여 사본 객체를 생성한다. */
 	CGameObject* pGameObject = pPrototype->Clone(pArg);
+
 	if (nullptr == pGameObject)
 		return E_FAIL;
 
-	/* 사본ㅌ객쳉를 추가하기위한 레이어를 차즌다. */
 	CLayer* pLayer = Find_Layer(iLevelIndex, strLayerTag);
 
-	/* 특정레이어에 최초의 객체를 추가한다. */
 	if (nullptr == pLayer)
 	{
 		pLayer = CLayer::Create();
@@ -78,8 +75,8 @@ HRESULT CObject_Manager::Add_GameObject(_uint iLevelIndex, const wstring& strLay
 
 CGameObject* CObject_Manager::Clone_GameObject(const wstring& strPrototypeTag, void* pArg)
 {
-	/* 원형을 차즌ㄴ다. */
 	CGameObject* pPrototype = Find_Prototype(strPrototypeTag);
+
 	if (nullptr == pPrototype)
 		return nullptr;
 

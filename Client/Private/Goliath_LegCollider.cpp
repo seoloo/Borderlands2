@@ -203,7 +203,7 @@ HRESULT CGoliath_LegCollider::Add_Components()
 	CCollider::COLLIDERDESC		ColliderDesc;
 	ZeroMemory(&ColliderDesc, sizeof ColliderDesc);
 
-	ColliderDesc.vSize = _float3(55.0f, 80.0f, 55.0f);
+	ColliderDesc.vSize = _float3(1.0f, 1.0f, 1.0f);
 	ColliderDesc.vPosition = _float3(0.f, ColliderDesc.vSize.y * 0.f, 0.f);
 
 	if (FAILED(__super::Add_Component(LEVEL_STATIC, TEXT("Prototype_Component_Collider_AABB"),
@@ -213,7 +213,7 @@ HRESULT CGoliath_LegCollider::Add_Components()
 	/* Com_OBB */
 	ZeroMemory(&ColliderDesc, sizeof ColliderDesc);
 
-	ColliderDesc.vSize = _float3(10.0f, 10.0f, 10.0f);
+	ColliderDesc.vSize = _float3(1.0f, 1.0f, 1.0f);
 	ColliderDesc.vPosition = _float3(0.f, ColliderDesc.vSize.y * 0.5f, 0.f);
 	ColliderDesc.vRotation = _float3(0.0f, XMConvertToRadians(45.0f), 0.f);
 
@@ -224,8 +224,8 @@ HRESULT CGoliath_LegCollider::Add_Components()
 	/* Com_SPHERE */
 	ZeroMemory(&ColliderDesc, sizeof ColliderDesc);
 
-	ColliderDesc.fRadius = 30.f;
-	ColliderDesc.vPosition = _float3(0.f, ColliderDesc.fRadius -3.f, -1.f);
+	ColliderDesc.fRadius = 60.f;
+	ColliderDesc.vPosition = _float3(0.f, ColliderDesc.fRadius -1.f, -1.f);
 
 	if (FAILED(__super::Add_Component(LEVEL_STATIC, TEXT("Prototype_Component_Collider_Sphere"),
 		TEXT("Com_SPHERE"), (CComponent**)&m_pColliderCom[COLLIDER_SPHERE], &ColliderDesc)))

@@ -91,7 +91,7 @@ HRESULT CLevel_GamePlay::Initialize()
 	g_InteractionCount = 0;
 
 	CSoundMgr::Get_Instance()->StopAll();
-	CSoundMgr::Get_Instance()->PlayBGM(L"Stage01_Boss_Chunlog_Normal_Loop.wav", 1.f);
+	//CSoundMgr::Get_Instance()->PlayBGM(L"Stage01_Boss_Chunlog_Normal_Loop.wav", 1.f);
 
 	/*if (FAILED(Ready_Lights()))
 		return E_FAIL;*/
@@ -113,6 +113,8 @@ HRESULT CLevel_GamePlay::Initialize()
 
 	if (FAILED(Ready_Layer_UI(TEXT("Layer_UI"))))
 		return E_FAIL;
+	/*if (FAILED(Ready_Layer_Camera(TEXT("Camera_Free"))))
+		return E_FAIL;*/
 
 	if (FAILED(pGameInstance->Add_GameObject(LEVEL_GAMEPLAY, TEXT("Layer_AreaFont"),
 		TEXT("Prototype_GameObject_AreaFont"))))
@@ -202,10 +204,10 @@ void CLevel_GamePlay::Tick(_float fTimeDelta)
 	if (g_bSecondDoorOpened)
 	{
 		CSoundMgr::Get_Instance()->StopAll();
-		CSoundMgr::Get_Instance()->PlayBGM(L"BATTLE_BGM.ogg", 1.f);
+		//CSoundMgr::Get_Instance()->PlayBGM(L"BATTLE_BGM.ogg", 1.f);
 
 		g_bBossWave = true;
-		Create_Thresher();
+		//Create_Thresher();
 
 		//Create_SpiderAnt();
 
@@ -217,7 +219,7 @@ void CLevel_GamePlay::Tick(_float fTimeDelta)
 		m_fCreateTimer += fTimeDelta;
 		if (m_fCreateTimer > 1.5f)
 		{
-			Create_Skag();
+			//Create_Skag();
 			m_fCreateTimer = 0.f;
 			g_bSpiderAntDead = false;
 		}
@@ -534,13 +536,13 @@ void CLevel_GamePlay::Create_Wave()
 	CGameInstance* pGameInstance = CGameInstance::Get_Instance();
 	Safe_AddRef(pGameInstance);
 
-	/*CPsycho::MONSTERDESC Desc;
+	CPsycho::MONSTERDESC Desc;
 	Desc.iNumber = 1;
 	if (FAILED(pGameInstance->Add_GameObject(LEVEL_GAMEPLAY, TEXT("Layer_Psycho"),
 		TEXT("Prototype_GameObject_Psycho"), &Desc)))
 		return;
 
-	CPsycho2::MONSTERDESC Desc2;
+	/*CPsycho2::MONSTERDESC Desc2;
 	Desc2.iNumber = 2;
 	if (FAILED(pGameInstance->Add_GameObject(LEVEL_GAMEPLAY, TEXT("Layer_Psycho2"),
 		TEXT("Prototype_GameObject_Psycho2"), &Desc2)))
@@ -552,9 +554,9 @@ void CLevel_GamePlay::Create_Wave()
 		TEXT("Prototype_GameObject_Psycho3"), &Desc3)))
 		return;*/
 
-	/*if (FAILED(pGameInstance->Add_GameObject(LEVEL_GAMEPLAY, TEXT("Layer_Goliath"),
+	if (FAILED(pGameInstance->Add_GameObject(LEVEL_GAMEPLAY, TEXT("Layer_Goliath"),
 		TEXT("Prototype_GameObject_Goliath"))))
-		return;*/
+		return;
 
 	/*if (FAILED(pGameInstance->Add_GameObject(LEVEL_GAMEPLAY, TEXT("Layer_Goliath2"),
 		TEXT("Prototype_GameObject_Goliath2"))))

@@ -17,14 +17,17 @@ HRESULT CTimer_Manager::Add_Timer(const wstring & strTimerTag)
 	return S_OK;
 }
 
-_float CTimer_Manager::Compute_TimeDelta(const wstring & strTimerTag)
+_float CTimer_Manager::Compute_TimeDelta(const wstring & strTimerTag, _bool bSlowDown, _bool bStop)
 {
 	CTimer*		pTimer = Find_Timer(strTimerTag);
+
 	if (nullptr == pTimer)
 		return 0.f;
 
-	pTimer->Update();
+	pTimer->Update(bSlowDown, bStop);
+
 	_float result = pTimer->Get_TimeDelta();
+
 	if (result >= 1.f)
 		result = 1 / 60.f;
 

@@ -45,7 +45,7 @@ public: /* For.Component_Manager */
 
 public: /* For.Timer_Manager */
 	HRESULT Add_Timer(const wstring& strTimerTag);
-	_float Compute_TimeDelta(const wstring& strTimerTag);
+	_float Compute_TimeDelta(const wstring& strTimerTag, _bool bSlowDown = false, _bool bStop = false);
 
 public: /* For.PipeLine */
 	_matrix Get_Transform_Matrix(CPipeLine::TRANSFORMSTATE eState);

@@ -53,6 +53,7 @@ HRESULT CThresher::Initialize(void * pArg)
 
 	m_iMaxHp = 3000;
 	m_iHp = m_iMaxHp;
+
 	
 	return S_OK;
 }

@@ -226,12 +226,12 @@ HRESULT CGameInstance::Add_Timer(const wstring& strTimerTag)
 	return m_pTimer_Manager->Add_Timer(strTimerTag);
 }
 
-_float CGameInstance::Compute_TimeDelta(const wstring& strTimerTag)
+_float CGameInstance::Compute_TimeDelta(const wstring& strTimerTag, _bool bSlowDown, _bool bStop)
 {
 	if (nullptr == m_pTimer_Manager)
 		return 0.f;
 
-	return m_pTimer_Manager->Compute_TimeDelta(strTimerTag);
+	return m_pTimer_Manager->Compute_TimeDelta(strTimerTag, bSlowDown, bStop);
 }
 
 _matrix CGameInstance::Get_Transform_Matrix(CPipeLine::TRANSFORMSTATE eState)

@@ -38,6 +38,7 @@ private:
 	/* 애니메이션을 구동하기위한 뼈들 .*/
 	vector<class CChannel*>		m_Channels;
 	vector<_uint>				m_CurrentKeyFrames;
+	vector<_uint>				m_NextAnimation;
 public:
 	static CAnimation* Create(const aiAnimation* pAIAnimation, class CModel* pModel);
 	CAnimation* Clone();

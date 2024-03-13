@@ -360,11 +360,11 @@ HRESULT CHammerlock::Collision_Object()
 	CGameInstance* pGameInstance = CGameInstance::Get_Instance();
 	Safe_AddRef(pGameInstance);
 
-	if (m_pColliderCom[COLLIDER_SPHERE]->Collision((CCollider*)pGameInstance->Get_Component(g_CurLevel, TEXT("Layer_Player"), TEXT("Com_SPHERE")))) {
+	/*if (m_pColliderCom[COLLIDER_SPHERE]->Collision((CCollider*)pGameInstance->Get_Component(g_CurLevel, TEXT("Layer_Player"), TEXT("Com_SPHERE")))) {
 		m_bCollision = true;
 	}
 	else
-		m_bCollision = false;
+		m_bCollision = false;*/
 
 	Safe_Release(pGameInstance);
 

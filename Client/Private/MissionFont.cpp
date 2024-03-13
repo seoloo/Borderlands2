@@ -199,11 +199,14 @@ HRESULT CMissionFont::GamePlay_Mission()
 	if (g_bSceondMissionClear && !m_bSecondMissionClear)
 	{
 		m_strGuide = TEXT("몬스터 처치");
-		if (FAILED(pGameInstance->Render_Font(TEXT("Font_136"), m_strGuide, _float2(g_iWinSizeX - 170, 200.f), XMVectorSet(0.5f, 1.f, 1.f, 1.f), 0.5f)))
+		m_strMission = TEXT("모든 몬스터 처치하기");
+
+		if (FAILED(pGameInstance->Render_Font(TEXT("Dongle"), TEXT("몬스터 처치"), 
+			_float2(g_iWinSizeX - 170, 200.f), XMVectorSet(0.5f, 1.f, 1.f, 1.f), 0.5f)))
 			return E_FAIL;
 
-		m_strMission = TEXT("모든 몬스터 처치하기");
-		if (FAILED(pGameInstance->Render_Font(TEXT("Font_136"), m_strMission, _float2(g_iWinSizeX - 250, 240.f), XMVectorSet(m_Color.x, m_Color.y, m_Color.z, m_Color.w), 0.5f)))
+		if (FAILED(pGameInstance->Render_Font(TEXT("Dongle"), TEXT("모든 몬스터 처치하기"),
+			_float2(g_iWinSizeX - 250, 240.f), XMVectorSet(1.f, 1.f, 1.f, 1.f), 0.5f)))
 			return E_FAIL;
 	}
 

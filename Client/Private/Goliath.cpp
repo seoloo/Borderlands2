@@ -87,7 +87,7 @@ void CGoliath::Tick(_float fTimeDelta)
 			m_iCounter++;
 		}
 		m_fDissolveTimer += fTimeDelta;
-		if (m_fDissolveTimer >= 0.1f)
+		if (m_fDissolveTimer >= 0.05f)
 		{
 			m_fDissolveValue += 0.1f;
 			m_fDissolveTimer = 0.f;
@@ -173,7 +173,7 @@ HRESULT CGoliath::Render()
 
 #endif
 	CGameInstance* pGameInstance = CGameInstance::Get_Instance();
-	if (m_pColliderCom[COLLIDER_AABB]->Collision_Mouse())
+	if (m_pColliderCom[COLLIDER_SPHERE]->Collision_Mouse())
 	{
 		g_bGoliathCollidedMouse = true;
 		g_strMonsterName = TEXT("Goliath");
@@ -183,6 +183,7 @@ HRESULT CGoliath::Render()
 	{
 		g_bGoliathCollidedMouse = false;
 	}
+
 	return S_OK;
 }
 
@@ -408,7 +409,7 @@ HRESULT CGoliath::Add_Components()
 	CCollider::COLLIDERDESC		ColliderDesc;
 	ZeroMemory(&ColliderDesc, sizeof ColliderDesc);
 
-	ColliderDesc.vSize = _float3(0.7f, 1.3f, 0.7f);
+	ColliderDesc.vSize = _float3(0.01f, 0.01f, 0.01f);
 	ColliderDesc.vPosition = _float3(0.f, ColliderDesc.vSize.y * 0.5f, 0.f);
 
 	if (FAILED(__super::Add_Component(LEVEL_STATIC, TEXT("Prototype_Component_Collider_AABB"),
@@ -418,7 +419,7 @@ HRESULT CGoliath::Add_Components()
 	/* Com_OBB */
 	ZeroMemory(&ColliderDesc, sizeof ColliderDesc);
 
-	ColliderDesc.vSize = _float3(1.f, 1.f, 1.f);
+	ColliderDesc.vSize = _float3(0.01f, 0.01f, 0.01f);
 	ColliderDesc.vPosition = _float3(0.f, ColliderDesc.vSize.y * 0.5f, 0.f);
 	ColliderDesc.vRotation = _float3(0.0f, XMConvertToRadians(45.0f), 0.f);
 
@@ -429,8 +430,8 @@ HRESULT CGoliath::Add_Components()
 	/* Com_SPHERE */
 	ZeroMemory(&ColliderDesc, sizeof ColliderDesc);
 
-	ColliderDesc.fRadius = 1.5f;
-	ColliderDesc.vPosition = _float3(0.f, ColliderDesc.fRadius - 1.5f, 0.f);
+	ColliderDesc.fRadius = 1.f;
+	ColliderDesc.vPosition = _float3(0.f, ColliderDesc.fRadius -0.5f, 0.f);
 
 	if (FAILED(__super::Add_Component(LEVEL_STATIC, TEXT("Prototype_Component_Collider_Sphere"),
 		TEXT("Com_SPHERE"), (CComponent**)&m_pColliderCom[COLLIDER_SPHERE], &ColliderDesc)))
@@ -466,7 +467,9 @@ HRESULT CGoliath::Collision_Object()
 	CGameInstance* pGameInstance = CGameInstance::Get_Instance();
 	Safe_AddRef(pGameInstance);
 
-	if (m_pColliderCom[COLLIDER_AABB]->Collision((CCollider*)pGameInstance->Get_Component(LEVEL_GAMEPLAY, TEXT("Layer_Missile"), TEXT("Com_OBB")))) {
+	if (m_pColliderCom[COLLIDER_SPHERE]->Collision((CCollider*)pGameInstance->
+		Get_Component(LEVEL_GAMEPLAY, TEXT("Layer_Missile"), TEXT("Com_SPHERE")))) 
+	{
 		m_bCollision = true;
 	}
 

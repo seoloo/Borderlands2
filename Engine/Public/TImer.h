@@ -16,7 +16,7 @@ public:
 
 public:
 	HRESULT				Initialize();
-	void				Update(void);
+	void				Update(_bool bSlowdown = false, _bool bStop = false);
 
 private:
 	LARGE_INTEGER		m_CurrentTime;
@@ -25,7 +25,7 @@ private:
 	LARGE_INTEGER		m_CpuTick;
 
 	float				m_fTimeDelta;
-
+	_float				m_fTimeValue = 1.f;
 public:
 	static CTimer* Create();
 	virtual void Free() override;

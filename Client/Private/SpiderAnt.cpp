@@ -388,15 +388,14 @@ HRESULT CSpiderAnt::Add_Parts()
 HRESULT CSpiderAnt::Collision_Object()
 {
 	CGameInstance* pGameInstance = CGameInstance::Get_Instance();
-	Safe_AddRef(pGameInstance);
 
-	if (m_pColliderCom[COLLIDER_SPHERE]->Collision((CCollider*)pGameInstance->Get_Component(LEVEL_GAMEPLAY, TEXT("Layer_Player"), TEXT("Com_OBB")))) {
+	if (m_pColliderCom[COLLIDER_SPHERE]->Collision((CCollider*)pGameInstance->
+		Get_Component(LEVEL_GAMEPLAY, TEXT("Layer_Player"), TEXT("Com_SPHERE")))) 
+	{
 		m_bCollided = true;
 	}
 	else
 		m_bCollided = false;
-
-	Safe_Release(pGameInstance);
 
 	return S_OK;
 }

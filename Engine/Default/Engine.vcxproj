@@ -302,6 +302,8 @@ call "$(SolutionDir)\UpdateLib.bat"</Command>
     <ClInclude Include="..\public\VIBuffer_Rect.h" />
     <ClInclude Include="..\Public\VIBuffer_Rect_Instance.h" />
     <ClInclude Include="..\Public\VIBuffer_Terrain.h" />
+    <ClInclude Include="E:\쥬신\3D개인\Framework\Engine\Public\Factory.h" />
+    <ClInclude Include="E:\쥬신\3D개인\Framework\Engine\Public\Singleton.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\Bin\ShaderFiles\Shader_Deferred.hlsl" />

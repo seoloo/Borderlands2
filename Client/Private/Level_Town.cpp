@@ -64,7 +64,7 @@ HRESULT CLevel_Town::Initialize()
 		TEXT("Prototype_GameObject_TownHammerlock"))))
 		return E_FAIL;
 
-	if (FAILED(pGameInstance->Add_GameObject(LEVEL_TOWN, TEXT("Layer_Roland"),
+	/*if (FAILED(pGameInstance->Add_GameObject(LEVEL_TOWN, TEXT("Layer_Roland"),
 		TEXT("Prototype_GameObject_TownRoland"))))
 		return E_FAIL;
 
@@ -78,7 +78,7 @@ HRESULT CLevel_Town::Initialize()
 
 	if (FAILED(pGameInstance->Add_GameObject(LEVEL_TOWN, TEXT("Layer_Hammerlock"),
 		TEXT("Prototype_GameObject_ClapTrap"))))
-		return E_FAIL;
+		return E_FAIL;*/
 
 #pragma region UI
 	if (FAILED(pGameInstance->Add_GameObject(LEVEL_TOWN, TEXT("Layer_HpBar"),
@@ -355,14 +355,58 @@ HRESULT CLevel_Town::Ready_Lights()
 	ZeroMemory(&LightDesc, sizeof LightDesc);
 
 	LightDesc.eType = LIGHTDESC::TYPE_DIRECTIONAL;
-	LightDesc.vDirection = _float4(1.f, -1.f, 1.f, 0.f);
+	LightDesc.vDirection = _float4(1.f, -1.f, 1.f, 1.f);
 
-	LightDesc.vDiffuse = _float4(1.f, 1.f, 1.f, 1.f);
-	LightDesc.vAmbient = _float4(0.8f, 0.8f, 0.8f, 1.f);
-	LightDesc.vSpecular = _float4(0.3f, 0.3f, 0.3f, 1.f);
+	LightDesc.vDiffuse = _float4(0.5f, 0.5f, 0.5f, 0.5f);
+	LightDesc.vAmbient = _float4(0.2f, 0.2f, 0.2f, 1.f);
+	LightDesc.vSpecular = _float4(0.2f, 0.2f, 0.2f, 1.f);
 
 	if (FAILED(pGameInstance->Add_Lights(m_pDevice, m_pContext, LightDesc)))
 		return E_FAIL;
+
+	ZeroMemory(&LightDesc, sizeof LightDesc);
+	LightDesc.eType = LIGHTDESC::TYPE_POINT;
+	LightDesc.vPosition = _float4(10.f, 0.f, 10.f, 0.f);
+	LightDesc.vDirection = _float4(0.5f, -1.f, 2.f, 1.f);
+	LightDesc.vSpotlightPosition = _float4(10.f, 0.f, 10.f, 0.f);
+	LightDesc.fRange = 4.f;
+
+	LightDesc.vDiffuse = _float4(1.f, 0.5f, 0.3f, 1.f);
+	LightDesc.vAmbient = _float4(1.f, 1.f, 1.f, 1.f);
+	LightDesc.vSpecular = _float4(1.f, 1.f, 1.f, 1.f);
+
+	/*if (FAILED(pGameInstance->Add_Lights(m_pDevice, m_pContext, LightDesc)))
+		return E_FAIL;*/
+
+	/*ZeroMemory(&LightDesc, sizeof LightDesc);
+
+	LightDesc.eType = LIGHTDESC::TYPE_SPOTLIGHT;
+	LightDesc.vPosition = _float4(0.f, 0.f, -20.f, 0.f);
+	LightDesc.vDirection = _float4(0.5f, -1.f, 0.5f, 1.f);
+	LightDesc.vSpotlightPosition = _float4(9.f, 0.f, 10.f, 1.f);
+	LightDesc.fRange = 2.f;
+
+	LightDesc.vDiffuse = _float4(0.3f, 0.3f, 1.f, 1.f);
+	LightDesc.vAmbient = _float4(0.1f, 0.1f, 0.1f, 1.f);
+	LightDesc.vSpecular = _float4(0.1f, 0.1f, 0.1f, 1.f);
+
+	if (FAILED(pGameInstance->Add_Lights(m_pDevice, m_pContext, LightDesc)))
+		return E_FAIL;
+
+	ZeroMemory(&LightDesc, sizeof LightDesc);
+
+	LightDesc.eType = LIGHTDESC::TYPE_SPOTLIGHT;
+	LightDesc.vPosition = _float4(0.f, 0.f, -20.f, 0.f);
+	LightDesc.vDirection = _float4(0.5f, -1.f, 0.5f, 1.f);
+	LightDesc.vSpotlightPosition = _float4(10.f, 0.f, 9.f, 1.f);
+	LightDesc.fRange = 2.f;
+
+	LightDesc.vDiffuse = _float4(0.3f, 1.f, 0.3f, 1.f);
+	LightDesc.vAmbient = _float4(0.1f, 0.1f, 0.1f, 1.f);
+	LightDesc.vSpecular = _float4(0.1f, 0.1f, 0.1f, 1.f);
+
+	if (FAILED(pGameInstance->Add_Lights(m_pDevice, m_pContext, LightDesc)))
+		return E_FAIL;*/
 
 	Safe_Release(pGameInstance);
 

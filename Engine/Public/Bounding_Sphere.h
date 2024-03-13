@@ -27,7 +27,7 @@ public:
 #endif
 
 private:
-	BoundingSphere* m_pSphere_Original = { nullptr };
+	BoundingSphere*				m_pSphere_Original = { nullptr };
 	BoundingSphere*				m_pSphere = { nullptr };
 
 public:

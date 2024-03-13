@@ -31,7 +31,9 @@ HRESULT CCamera::Initialize(void* pArg)
 
 	Safe_AddRef(m_pTransform);
 
-	m_pTransform = (CTransform*)pComponent_Manager->Clone_Component(pCameraDesc->iLevelIndex, pCameraDesc->strTranformTag, &pCameraDesc->TransformDesc);
+	m_pTransform = (CTransform*)pComponent_Manager->Clone_Component(
+		pCameraDesc->iLevelIndex, pCameraDesc->strTranformTag, &pCameraDesc->TransformDesc);
+
 	if (nullptr == m_pTransform)
 		return E_FAIL;
 

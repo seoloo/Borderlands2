@@ -515,21 +515,13 @@ HRESULT CPlayer::Add_PlayerParts()
 
 	CameraDesc.CameraDesc.iLevelIndex = LEVEL_STATIC;
 	CameraDesc.CameraDesc.strTranformTag = TEXT("Prototype_Component_Transform");
-	// 위치
 	CameraDesc.CameraDesc.vEye = _float4(0.f, 1.f, -7.f, 1.f);
-	// 보는방향
 	CameraDesc.CameraDesc.vAt = _float4(0.f, 0.f, 0.f, 1.f);
-	// 시야각
 	CameraDesc.CameraDesc.fFovy = XMConvertToRadians(60.0f);
-	// 투영행렬의 Aspect (해상도에 따른 크기변화 반영)
 	CameraDesc.CameraDesc.fAspect = (_float)g_iWinSizeX / g_iWinSizeY;
-	// 가장 가까운 거리
 	CameraDesc.CameraDesc.fNear = 0.2f;
-	// 가장 먼 거리
 	CameraDesc.CameraDesc.fFar = 300.f;
-	// 초당 이동 속도
 	CameraDesc.CameraDesc.TransformDesc.fSpeedPerSec = 10.0f;
-	// 초당 회전 속도
 	CameraDesc.CameraDesc.TransformDesc.fRotationPerSec = XMConvertToRadians(90.0f);
 
 #pragma endregion 

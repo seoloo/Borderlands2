@@ -139,6 +139,8 @@ _bool CNavigation::is_Move(_fvector vPosition)
 #ifdef _DEBUG
 HRESULT CNavigation::Render()
 {
+	return S_OK;
+
 	if (nullptr == m_pWorldMatrix)
 		return E_FAIL;
 
@@ -197,7 +199,8 @@ HRESULT CNavigation::SetUp_Neighbors()
 			if (pSourCell == pDestCell)
 				continue;
 
-			if (true == pDestCell->Compare_Points(pSourCell->Get_Point(CCell::POINT_A), pSourCell->Get_Point(CCell::POINT_B)))
+			if (true == pDestCell->Compare_Points(pSourCell->Get_Point(CCell::POINT_A), 
+				pSourCell->Get_Point(CCell::POINT_B)))
 			{
 				pSourCell->SetUp_Neighbor(CCell::LINE_AB, pDestCell);
 			}

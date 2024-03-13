@@ -11,31 +11,32 @@ CTimer::CTimer()
 
 HRESULT CTimer::Initialize()
 {
-	// 메인보드가 갖고 있는 고해상도 타이머의 누적값을 얻어오는 함수
-	QueryPerformanceCounter(&m_CurrentTime);		// 1000
-	QueryPerformanceCounter(&m_OldTime);			// 1020	
-	QueryPerformanceCounter(&m_OriginTime);			// 1030	
+	QueryPerformanceCounter(&m_CurrentTime);		
+	QueryPerformanceCounter(&m_OldTime);				
+	QueryPerformanceCounter(&m_OriginTime);				
 
-	// 고해상도 타이머의 주파수를 얻어오는 함수, 주파수는 cpu 초당 클럭수 주기를 말함
-	QueryPerformanceFrequency(&m_CpuTick);			// 1,600,000
+	QueryPerformanceFrequency(&m_CpuTick);		
 
 	return S_OK;
 }
 
-void CTimer::Update(void)
+void CTimer::Update(_bool bSlowdown, _bool bStop)
 {
-	QueryPerformanceCounter(&m_CurrentTime);	// 2000	//	3000 // 4000 // 5000
+	QueryPerformanceCounter(&m_CurrentTime);
 		
 	if (m_CurrentTime.QuadPart - m_OriginTime.QuadPart > m_CpuTick.QuadPart)
 	{
 		QueryPerformanceFrequency(&m_CpuTick);
 		m_OriginTime = m_CurrentTime;
 	}
-	
-	m_fTimeDelta = float(m_CurrentTime.QuadPart - m_OldTime.QuadPart) / m_CpuTick.QuadPart;
+
+	m_fTimeValue = bSlowdown ? 0.5f : 1.f;
+	m_fTimeValue = bStop ? 0.f : 1.f;
+
+	m_fTimeDelta = m_fTimeValue * float(m_CurrentTime.QuadPart 
+		- m_OldTime.QuadPart) / m_CpuTick.QuadPart;
 
 	m_OldTime = m_CurrentTime;
-
 }
 
 CTimer * CTimer::Create()

@@ -58,6 +58,7 @@ private:
 	_bool	m_bShieldZero = { false };
 
 	_bool	m_bRun = { false };
+	_vector vLastVelocity = XMVectorZero();
 public:
 	_bool Get_Zoom() { return m_bZoom; };
 

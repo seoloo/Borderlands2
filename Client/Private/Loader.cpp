@@ -147,11 +147,10 @@ CLoader::CLoader(ID3D11Device* pDevice, ID3D11DeviceContext* pContext)
 	Safe_AddRef(m_pContext);
 }
 
-unsigned int APIENTRY ThreadEntry(void* pArg)
+unsigned int APIENTRY Thread_Loader(void* pArg)
 {
 	CLoader*		pLoader = (CLoader*)pArg;
 
-	/*  모든 컴객체를 초기화하낟. */
 	CoInitializeEx(nullptr, 0);
 
 	if (FAILED(pLoader->LoadingForNextLevel()))
@@ -166,9 +165,14 @@ HRESULT CLoader::Initialize(LEVEL eNextLevel)
 
 	InitializeCriticalSection(&m_CriticalSection);
 
-	m_hThread = (HANDLE)_beginthreadex(nullptr, 0, ThreadEntry, this, 0, nullptr);
+	m_hThread = (HANDLE)_beginthreadex(nullptr, 0, 
+		Thread_Loader, this, 0, nullptr);
+
 	if (0 == m_hThread)
+	{
+		MSG_BOX("Failed to _beginthreadex");
 		return E_FAIL;	
+	}
 
 	return S_OK;
 }
@@ -195,15 +199,22 @@ HRESULT CLoader::LoadingForNextLevel()
 		break;
 	}
 
-	if (FAILED(hr))
-		goto except;		
-
 	LeaveCriticalSection(&m_CriticalSection);
-	return S_OK;
+
+	if (FAILED(hr))
+	{
+		MSG_BOX("Failed to NextLevel");
+		return E_FAIL;
+	}
+	else
+		return S_OK;
+
+
+		/*goto except;		
 
 except:
 	LeaveCriticalSection(&m_CriticalSection);
-	return E_FAIL;
+	return E_FAIL;*/
 }
 
 HRESULT CLoader::Loading_ForLogo()

@@ -17,7 +17,7 @@ CCollider::CCollider(const CCollider & rhs)
 	, m_eType(rhs.m_eType)
 #ifdef _DEBUG
 	, m_pBatch(rhs.m_pBatch)
-	, m_pEffect(rhs.m_pEffect)
+	, m_pBaseEffect(rhs.m_pBaseEffect)
 	, m_pInputLayout(rhs.m_pInputLayout)
 #endif
 {
@@ -31,20 +31,23 @@ HRESULT CCollider::Initialize_Prototype(TYPE eType)
 	m_eType = eType;
 
 #ifdef _DEBUG
+
 	m_pBatch = new PrimitiveBatch<VertexPositionColor>(m_pContext);
 
-	m_pEffect = new BasicEffect(m_pDevice);
+	m_pBaseEffect = new BasicEffect(m_pDevice);
 
-	m_pEffect->SetVertexColorEnabled(true);
+	m_pBaseEffect->SetVertexColorEnabled(true);
 
 	const void* pShaderByteCode = nullptr;
 	size_t	ShaderByteCodeLength = 0;
 
-	m_pEffect->GetVertexShaderBytecode(&pShaderByteCode, &ShaderByteCodeLength);
+	m_pBaseEffect->GetVertexShaderBytecode(&pShaderByteCode, &ShaderByteCodeLength);
 
-	if (FAILED(m_pDevice->CreateInputLayout(VertexPositionColor::InputElements, VertexPositionColor::InputElementCount,
+	if (FAILED(m_pDevice->CreateInputLayout(VertexPositionColor::InputElements, 
+		VertexPositionColor::InputElementCount,
 		pShaderByteCode, ShaderByteCodeLength, &m_pInputLayout)))
 		return E_FAIL;
+
 #endif
 
 	return S_OK;
@@ -71,6 +74,7 @@ HRESULT CCollider::Initialize(void * pArg)
 
 	if (nullptr == m_pBounding)
 		return E_FAIL;
+
 	return S_OK;
 }
 
@@ -86,7 +90,8 @@ _bool CCollider::Collision(CCollider* pTargetCollider)
 	if (nullptr == pTargetCollider)
 		return m_isCollision;
 
-	return m_isCollision = m_pBounding->Intersect(pTargetCollider->m_eType, pTargetCollider->m_pBounding->Get_BoundingDesc());
+	return m_isCollision = m_pBounding->Intersect(pTargetCollider->m_eType, 
+		pTargetCollider->m_pBounding->Get_BoundingDesc());
 }
 
 _bool CCollider::Collision_Mouse()
@@ -104,31 +109,32 @@ _bool CCollider::Collision_Mouse()
 }
 
 #ifdef _DEBUG
+
 HRESULT CCollider::Render()
 {
 	/*m_pContext->IASetInputLayout(m_pInputLayout);
 
-	m_pEffect->SetWorld(XMMatrixIdentity());
+	m_pBaseEffect->SetWorld(XMMatrixIdentity());
 
 	CPipeLine* pPipeLine = CPipeLine::Get_Instance();
-	Safe_AddRef(pPipeLine);
 
-	m_pEffect->SetView(pPipeLine->Get_Transform_Matrix(CPipeLine::D3DTS_VIEW));
-	m_pEffect->SetProjection(pPipeLine->Get_Transform_Matrix(CPipeLine::D3DTS_PROJ));
+	m_pBaseEffect->SetView(pPipeLine->Get_Transform_Matrix(CPipeLine::D3DTS_VIEW));
+	m_pBaseEffect->SetProjection(pPipeLine->Get_Transform_Matrix(CPipeLine::D3DTS_PROJ));
 
-	Safe_Release(pPipeLine);
-
-	m_pEffect->Apply(m_pContext);
+	m_pBaseEffect->Apply(m_pContext);
 
 	m_pBatch->Begin();
 
-	_vector		vColor = m_isCollision == false ? XMVectorSet(0.f, 1.f, 0.f, 1.f) : XMVectorSet(1.f, 0.f, 0.f, 1.f);
+	_vector		vColor = m_isCollision == false 
+		? XMVectorSet(0.f, 1.f, 0.f, 1.f) : XMVectorSet(1.f, 0.f, 0.f, 1.f);
 
 	m_pBounding->Render(m_pBatch, vColor);
 
 	m_pBatch->End();*/
+
 	return S_OK;
 }
+
 #endif
 
 CCollider * CCollider::Create(ID3D11Device * pDevice, ID3D11DeviceContext * pContext, TYPE eType)
@@ -167,7 +173,7 @@ void CCollider::Free()
 	if (false == m_isCloned)
 	{
 		Safe_Delete(m_pBatch);
-		Safe_Delete(m_pEffect);
+		Safe_Delete(m_pBaseEffect);
 	}
 
 	Safe_Release(m_pInputLayout);

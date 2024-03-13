@@ -42,8 +42,8 @@ HRESULT CVIBuffer_Point_Instance::Initialize_Prototype(_uint iNumInstance)
 	VTXPOSPSIZE*		pVertices = new VTXPOSPSIZE[m_iNumVertices];
 	ZeroMemory(pVertices, sizeof(VTXPOSPSIZE) * m_iNumVertices);
 
-	pVertices[0].vPosition = _float3(0.0f, 0.0f, 0.f);
-	pVertices[0].vPSize = _float2(1.f, 1.f);
+	pVertices[0].vPosition = _float3(0.0f, 0.0f, 0.0f);
+	pVertices[0].vPSize = _float2(50.f, 50.f);
 
 	ZeroMemory(&m_InitializeData, sizeof m_InitializeData);
 	m_InitializeData.pSysMem = pVertices;
@@ -52,6 +52,7 @@ HRESULT CVIBuffer_Point_Instance::Initialize_Prototype(_uint iNumInstance)
 		return E_FAIL;
 
 	Safe_Delete_Array(pVertices);
+
 #pragma endregion
 
 #pragma region INDEX_BUFFER
@@ -76,8 +77,6 @@ HRESULT CVIBuffer_Point_Instance::Initialize_Prototype(_uint iNumInstance)
 	Safe_Delete_Array(pIndices);
 
 #pragma endregion
-
-
 
 	return S_OK;
 }
@@ -199,13 +198,16 @@ void CVIBuffer_Point_Instance::Tick(_float fTimeDelta)
 	{
 		for (size_t i = 0; i < m_iNumInstance; i++)
 		{
-			((VTXRECTINSTANCE*)SubResource.pData)[i].vTranslation.y -= m_pInstanceSpeed[i] * fTimeDelta;
+			((VTXRECTINSTANCE*)SubResource.pData)[i].vTranslation.y 
+				-= m_pInstanceSpeed[i] * fTimeDelta;
 			((VTXRECTINSTANCE*)SubResource.pData)[i].vTranslation.x += 3.f * fTimeDelta;
 
 			if (0 > ((VTXRECTINSTANCE*)SubResource.pData)[i].vTranslation.y)
 			{
-				((VTXRECTINSTANCE*)SubResource.pData)[i].vTranslation.y = m_InstanceData.vPivotPos.y + m_RandomY(m_RandomNumber);
-				((VTXRECTINSTANCE*)SubResource.pData)[i].vTranslation.x = m_InstanceData.vPivotPos.x + m_RandomX(m_RandomNumber);
+				((VTXRECTINSTANCE*)SubResource.pData)[i].vTranslation.y 
+					= m_InstanceData.vPivotPos.y + m_RandomY(m_RandomNumber);
+				((VTXRECTINSTANCE*)SubResource.pData)[i].vTranslation.x = 
+					m_InstanceData.vPivotPos.x + m_RandomX(m_RandomNumber);
 
 			}
 		}

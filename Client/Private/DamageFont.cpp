@@ -89,17 +89,19 @@ void CDamageFont::Tick(_float fTimeDelta)
     __super::Tick(fTimeDelta);
 
 	m_fTimer += fTimeDelta;
+	_float fDamageFontHeight = m_pTransformCom->Get_State(CTransform::STATE_POSITION).m128_f32[1];
 
-	if (0.5f < m_fTimer)
+	if (1.f < m_fTimer)
 		Set_Dead();
 
 	_float fHeight = 0.f;
 
 	fHeight = (m_fTimer * m_fTimer * -9.8f * 0.7f) + (m_fTimer * 3.f);
 
-	m_pTransformCom->Set_State(CTransform::STATE_POSITION, XMVectorSet(0.f, m_fPos.y + fHeight, 0.f, 1.f));
+	m_pTransformCom->Set_State(CTransform::STATE_POSITION, 
+		XMVectorSet(0.f, m_fPos.y + fHeight, 0.f, 1.f));
 
-	if (m_pTransformCom->Get_State(CTransform::STATE_POSITION).m128_f32[1] < -7.f)
+	if (fDamageFontHeight < -7.f)
 	{
 		Set_Dead();
 	}

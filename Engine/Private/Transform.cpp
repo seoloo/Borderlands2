@@ -87,7 +87,6 @@ void CTransform::Go_Straight(_float fTimeDelta, CNavigation* pNavigation)
 	_vector		vSliding = XMVectorSet(0.f, 0.f, 0.f, 0.f);
 	_float		fdotProduct = XMVectorGetX(XMVector3Dot(vLook, vNormal));
 
-
 	_float3		vLine = { 0.f,0.f,0.f };
 
 	if (nullptr == pNavigation || !pNavigation->is_Move(vPosition))
@@ -98,10 +97,12 @@ void CTransform::Go_Straight(_float fTimeDelta, CNavigation* pNavigation)
 		_vector		vFirstPos = XMLoadFloat3(&m_vFirstPos);
 		_vector		vSecondPos = XMLoadFloat3(&m_vSecondPos);
 
-		_vector vBoundaryMax = XMVectorMax(vFirstPos, vSecondPos);
-		_vector vBoundaryMin = XMVectorMin(vFirstPos, vSecondPos);
+		_vector		vBoundaryMax = XMVectorMax(vFirstPos, vSecondPos);
+		_vector		vBoundaryMin = XMVectorMin(vFirstPos, vSecondPos);
 
-		vLine = _float3((m_vFirstPos.x - m_vSecondPos.x), (m_vFirstPos.y - m_vSecondPos.y), (m_vFirstPos.z - m_vSecondPos.z));
+		vLine = _float3((m_vFirstPos.x - m_vSecondPos.x),
+			(m_vFirstPos.y - m_vSecondPos.y), (m_vFirstPos.z - m_vSecondPos.z));
+
 		vDir = XMVector3Normalize(XMLoadFloat3(&m_vFirstPos) - XMLoadFloat3(&m_vSecondPos));
 		vNormal = XMVectorSet(-XMVectorGetY(vDir), XMVectorGetX(vDir), 0, 0);
 		vSliding = vLook - vNormal * fdotProduct;
@@ -115,9 +116,22 @@ void CTransform::Go_Straight(_float fTimeDelta, CNavigation* pNavigation)
 
 	if (nullptr == pNavigation || pNavigation->is_Move(vPosition))
 	{
-		vPosition += XMVector3Normalize(vLook) * m_TransformDesc.fSpeedPerSec * fTimeDelta;
+		m_fAcceleration += m_fMaxAcceleration * fTimeDelta;
+
+		m_fAcceleration = std::min(m_fAcceleration, m_fMaxAcceleration);
+
+		_vector vLastVelocity = XMVectorZero();
+
+		_vector currentVelocity = XMVector3Normalize(vLook) * m_TransformDesc.fSpeedPerSec;
+
+		_vector acceleratedVelocity = vLastVelocity +
+			(currentVelocity - vLastVelocity) * m_fAcceleration;
+
+		vPosition += acceleratedVelocity * fTimeDelta;
 
 		Set_State(STATE_POSITION, vPosition);
+
+		vLastVelocity = acceleratedVelocity;
 	}
 }
 

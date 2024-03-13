@@ -55,15 +55,12 @@ HRESULT CPistol::Initialize(void * pArg)
 	LightDesc.vPosition = _float4(0.f, 0.f, 0.f, 0.f);
 	LightDesc.fRange = 5.f;
 
-	LightDesc.vDiffuse = _float4(1.f, 0.8f, 0.f, 1.f);
-	LightDesc.vAmbient = _float4(0.4f, 0.2f, 0.f, 1.f);
-	LightDesc.vSpecular = LightDesc.vDiffuse;
+	LightDesc.vDiffuse = _float4(1.f, 0.5f, 0.f, 1.f);
+	LightDesc.vAmbient = _float4(0.7f, 0.7f, 0.7f, 1.f);
+	LightDesc.vSpecular = _float4(0.7f, 0.7f, 0.7f, 1.f);
 
-	/*if (g_CurLevel == 4)
-	{*/
-		if (FAILED(pGameInstance->Add_Lights(m_pDevice, m_pContext, LightDesc)))
-			return E_FAIL;
-	//}
+	if (FAILED(pGameInstance->Add_Lights(m_pDevice, m_pContext, LightDesc)))
+		return E_FAIL;
 
 	pGameInstance->Lights_TurnOff(true);
 
@@ -106,9 +103,9 @@ void CPistol::Tick(_float fTimeDelta)
 
 				if (g_CurLevel == 3)
 				{
-					if (FAILED(pGameInstance->Add_GameObject(g_CurLevel, TEXT("Layer_Muzzle"),
+					/*if (FAILED(pGameInstance->Add_GameObject(g_CurLevel, TEXT("Layer_Muzzle"),
 						TEXT("Prototype_GameObject_TownMuzzle"))))
-						return;
+						return;*/
 				}
 
 				if (g_CurLevel == 4)

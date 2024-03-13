@@ -50,12 +50,21 @@ HRESULT CAnimation::Update_TransformationMatrices(_float fTimeDelta, const CMode
 	{
 		m_fTrackPosition = 0.f;
 		m_bAnimEnd = true;
+
+		_uint lastKeyFrameIndex = m_CurrentKeyFrames.back();
+
+		if (!m_NextAnimation.empty())
+		{
+			_uint nextAnimationFirstKeyFrame = m_NextAnimation.front();
+			m_NextAnimation.push_back(nextAnimationFirstKeyFrame);
+		}
+
+		m_NextAnimation.push_back(lastKeyFrameIndex);
 	}
 
-	_uint		iIndex = 0;
+	_uint iIndex = 0;
 
 	/* 이 애니메이션에서 사용하는 모든 뼈들을 순회하면서 시간에 맞는 상태를 가질 수 있도록 한다. */
-
 	for (auto& pChannel : m_Channels)
 	{
 		pChannel->Update_TransformationMatrices(&m_CurrentKeyFrames[iIndex++], m_fTrackPosition, Bones);

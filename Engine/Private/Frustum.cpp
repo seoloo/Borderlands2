@@ -37,7 +37,8 @@ void CFrustum::Tick()
 	for (size_t i = 0; i < 8; i++)
 	{
 		vPoints[i] = XMVector3TransformCoord(XMLoadFloat3(&m_vPoints[i]), ProjMatrixInverse);
-		XMStoreFloat3(&m_vPoints_InWorld[i], XMVector3TransformCoord(vPoints[i], ViewMatrixInverse));
+		XMStoreFloat3(&m_vPoints_InWorld[i], 
+			XMVector3TransformCoord(vPoints[i], ViewMatrixInverse));
 	}
 
 	Make_Plane(m_vPoints_InWorld, m_vPlanes_InWorld);
@@ -66,8 +67,8 @@ _bool CFrustum::isInFrustum_InWorld(_fvector vWorldPos, _float fRange)
 {
 	for (size_t i = 0; i < 6; i++)
 	{
-		/* i번째 평면의 바깥에 있다. */
-		if (fRange < XMVectorGetX(XMPlaneDotCoord(XMLoadFloat4(&m_vPlanes_InWorld[i]), vWorldPos)))
+		if (fRange < XMVectorGetX(XMPlaneDotCoord(
+			XMLoadFloat4(&m_vPlanes_InWorld[i]), vWorldPos)))
 			return false;
 	}
 

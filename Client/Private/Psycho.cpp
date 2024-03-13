@@ -405,7 +405,7 @@ HRESULT CPsycho::Add_Components()
 	CTransform::TRANSFORMDESC		TransformDesc;
 	ZeroMemory(&TransformDesc, sizeof TransformDesc);
 
-	TransformDesc.fSpeedPerSec = 7.f;
+	TransformDesc.fSpeedPerSec = 0.f;
 	TransformDesc.fRotationPerSec = XMConvertToRadians(90.0f);
 
 	/* Com_Transform */
@@ -446,7 +446,7 @@ HRESULT CPsycho::Add_Components()
 	CCollider::COLLIDERDESC		ColliderDesc;
 	ZeroMemory(&ColliderDesc, sizeof ColliderDesc);
 
-	ColliderDesc.vSize = _float3(0.7f, 1.3f, 0.7f);
+	ColliderDesc.vSize = _float3(0.01f, 0.01f, 0.01f);
 	ColliderDesc.vPosition = _float3(0.f, ColliderDesc.vSize.y * 0.5f, 0.f);
 
 	if (FAILED(__super::Add_Component(LEVEL_STATIC, TEXT("Prototype_Component_Collider_AABB"),
@@ -456,7 +456,7 @@ HRESULT CPsycho::Add_Components()
 	/* Com_OBB */
 	ZeroMemory(&ColliderDesc, sizeof ColliderDesc);
 
-	ColliderDesc.vSize = _float3(1.f, 1.6f, 1.f);
+	ColliderDesc.vSize = _float3(0.01f, 0.01f, 0.01f);
 	ColliderDesc.vPosition = _float3(0.f, ColliderDesc.vSize.y * 0.5f, 0.f);
 	ColliderDesc.vRotation = _float3(0.0f, XMConvertToRadians(45.0f), 0.f);
 
@@ -468,7 +468,7 @@ HRESULT CPsycho::Add_Components()
 	ZeroMemory(&ColliderDesc, sizeof ColliderDesc);
 
 	ColliderDesc.fRadius = 1.5f;
-	ColliderDesc.vPosition = _float3(0.f, ColliderDesc.fRadius - 1.5f, 0.f);
+	ColliderDesc.vPosition = _float3(0.f, ColliderDesc.fRadius, 0.f);
 
 	if (FAILED(__super::Add_Component(LEVEL_STATIC, TEXT("Prototype_Component_Collider_Sphere"),
 		TEXT("Com_SPHERE"), (CComponent**)&m_pColliderCom[COLLIDER_SPHERE], &ColliderDesc)))

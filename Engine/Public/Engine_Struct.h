@@ -21,12 +21,13 @@ namespace Engine
 
 	typedef struct tagLightDesc
 	{
-		enum TYPE { TYPE_DIRECTIONAL, TYPE_POINT, TYPE_END };
+		enum TYPE { TYPE_DIRECTIONAL, TYPE_POINT, TYPE_SPOTLIGHT, TYPE_END };
 
 		TYPE			eType;
 		bool			bTurnOff;
 		XMFLOAT4		vDirection;
 		XMFLOAT4		vPosition;
+		XMFLOAT4		vSpotlightPosition;
 		float			fRange;
 
 		XMFLOAT4		vDiffuse;

@@ -14,6 +14,7 @@ public:
 	{
 		_float			fSpeedPerSec;
 		_float			fRotationPerSec;
+
 	}TRANSFORMDESC;
 
 private:
@@ -39,8 +40,10 @@ public:
 
 public:
 	void Set_Speed(_float fSpeed) { m_TransformDesc.fSpeedPerSec = fSpeed; };
+	void Set_Acceleration(_float fSpeed) { m_fAcceleration = fSpeed; };
 	void Set_State(STATE eState, _fvector vState);
 	void Set_PartsWorldMatrix(_float4x4 WorldMat) { m_PartsWorldMatrix = WorldMat; };
+	//void Set_vLastVelocity(_vector vVelocity) { m_vLastVelocity = vVelocity; };
 
 public:
 	virtual HRESULT Initialize_Prototype();
@@ -82,6 +85,10 @@ private:
 
 	_float3				m_vFirstPos = { 0.f,0.f,0.f };
 	_float3				m_vSecondPos = { 0.f,0.f,0.f };
+
+	_float m_fAcceleration = 0.01f;
+	_float m_fMaxAcceleration = 5.0f;
+	//_vector m_vLastVelocity = XMVectorZero();
 
 public:
 	static CTransform* Create(ID3D11Device* pDevice, ID3D11DeviceContext* pContext);

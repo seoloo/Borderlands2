@@ -92,7 +92,8 @@ HRESULT CSnowing::Add_Components()
 	PointInstanceDesc.fMaxSpeed = 15.0f;
 	PointInstanceDesc.bFalling = true;
 
-	if (FAILED(__super::Add_Component(g_CurLevel, TEXT("Prototype_Component_VIBuffer_Point_Instance"),
+	if (FAILED(__super::Add_Component(g_CurLevel, 
+		TEXT("Prototype_Component_VIBuffer_Point_Instance"),
 		TEXT("Com_VIBuffer"), (CComponent**)&m_pVIBufferCom, &PointInstanceDesc)))
 		return E_FAIL;
 

@@ -46,9 +46,9 @@ private:
 
 #ifdef _DEBUG
 private:
-	PrimitiveBatch<VertexPositionColor>*		m_pBatch = { nullptr }; /* 기하 도형을 그리는데 사용*//* 정점의 위치와 색상 정보를 담음*/
-	BasicEffect*								m_pEffect = { nullptr }; /* 모델과 텍스처 처리를 위한 기능을 제공 */
-	ID3D11InputLayout* m_pInputLayout = { nullptr };	/* 정점 데이터를 그래픽스 파이프라인으로 보낼 떄 정점의 구조와 레이아웃을 정의하는 역할 */
+	PrimitiveBatch<VertexPositionColor>*		m_pBatch = { nullptr };			/* 기하 도형을 그리는데 사용*//* 정점의 위치와 색상 정보를 담음*/
+	BasicEffect*								m_pBaseEffect = { nullptr };	/* 모델과 텍스처 처리를 위한 기능을 제공 */
+	ID3D11InputLayout* m_pInputLayout = { nullptr };							/* 정점 데이터를 그래픽스 파이프라인으로 보낼 떄 정점의 구조와 레이아웃을 정의하는 역할 */
 #endif
 
 public:

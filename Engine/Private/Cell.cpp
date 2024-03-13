@@ -69,12 +69,11 @@ _bool CCell::is_In(_fvector vPosition, _int* pNeighborIndex)
 
 		_vector	vTmpDir = XMLoadFloat3(&m_vPoints[(i + 1) % 3]) - XMLoadFloat3(&m_vPoints[i]);
 
-		_vector vDestDir = XMVector3Normalize(XMVectorSet(XMVectorGetZ(vTmpDir) * -1.f, 0.f, XMVectorGetX(vTmpDir), 0.f));
+		_vector vDestDir = XMVector3Normalize(XMVectorSet(XMVectorGetZ(vTmpDir) * -1.f, 
+			0.f, XMVectorGetX(vTmpDir), 0.f));
 
 		if (0 < XMVectorGetX(XMVector3Dot(vSourDir, vDestDir)))
 		{
-			/* i번째 라인을 나갔다. */
-			/* i번째 이웃. */
 			m_vFirstPos = m_vPoints[(i + 1) % 3];
 			m_vSecondPos = m_vPoints[(i)];
 			*pNeighborIndex = m_iNeighborIndices[i];

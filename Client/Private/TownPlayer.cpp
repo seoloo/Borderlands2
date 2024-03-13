@@ -200,17 +200,17 @@ HRESULT CTownPlayer::Render()
 		m_pModelCom->Render(i);
 	}
 
-//#ifdef _DEBUG
-//
-//	for (size_t i = 0; i < COLLIDER_END; i++)
-//	{
-//		if (nullptr != m_pColliderCom[i])
-//			m_pColliderCom[i]->Render();
-//	}
-//
-//	m_pNavigationCom->Render();
-//
-//#endif
+#ifdef _DEBUG
+
+	for (size_t i = 0; i < COLLIDER_END; i++)
+	{
+		if (nullptr != m_pColliderCom[i])
+			m_pColliderCom[i]->Render();
+	}
+
+	m_pNavigationCom->Render();
+
+#endif
 
 	return S_OK;
 }
@@ -268,6 +268,7 @@ void CTownPlayer::Key_State(_float fTime)
 	else
 	{
 		m_pModelCom->SetUp_Animation(9);
+		m_pTransformCom->Set_Acceleration(0.f);
 	}
 
 	if (pGameInstance->Get_DIKeyState(DIK_LSHIFT) & 0x8000)
@@ -351,7 +352,7 @@ void CTownPlayer::Walk_Sound(_float fTimeDelta)
 		m_fTimer += fTimeDelta;
 		if (m_fTimer > 0.8f)
 		{
-			CSoundMgr::Get_Instance()->PlaySoundW(L"Step.mp3", 0.4f);
+			//CSoundMgr::Get_Instance()->PlaySoundW(L"Step.mp3", 0.4f);
 			m_fTimer = 0.f;
 		}
 	}
@@ -360,7 +361,7 @@ void CTownPlayer::Walk_Sound(_float fTimeDelta)
 		m_fTimer += fTimeDelta;
 		if (m_fTimer > 0.4f)
 		{
-			CSoundMgr::Get_Instance()->PlaySoundW(L"Step.mp3", 0.4f);
+			//CSoundMgr::Get_Instance()->PlaySoundW(L"Step.mp3", 0.4f);
 			m_fTimer = 0.f;
 		}
 	}
@@ -378,7 +379,7 @@ HRESULT CTownPlayer::Add_Components()
 	CTransform::TRANSFORMDESC		TransformDesc;
 	ZeroMemory(&TransformDesc, sizeof TransformDesc);
 
-	TransformDesc.fSpeedPerSec = 5.f;
+	TransformDesc.fSpeedPerSec = 2.f;
 	TransformDesc.fRotationPerSec = XMConvertToRadians(90.0f);
 
 	/* Com_Transform */

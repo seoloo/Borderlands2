@@ -13,7 +13,7 @@ private:
 
 public:
 	HRESULT Add_Timer(const wstring& strTimerTag);
-	_float Compute_TimeDelta(const wstring& strTimerTag);
+	_float Compute_TimeDelta(const wstring& strTimerTag, _bool bSlowDown = false, _bool bStop = false);
 
 private:
 	map<wstring, class CTimer*>			m_Timers;

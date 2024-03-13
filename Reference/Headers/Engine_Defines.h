@@ -56,7 +56,7 @@ using namespace DirectX;
 #include "fmod.h"
 #include "fmod.hpp"
 
-
+#include "Factory.h"
 
 #ifdef _DEBUG
 
