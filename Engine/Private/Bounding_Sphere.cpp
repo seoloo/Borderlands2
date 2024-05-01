@@ -49,11 +49,11 @@ _bool CBounding_Sphere::Intersect(CCollider::TYPE eType, void* pBoundingDesc)
 	return isColl;
 }
 
-_bool CBounding_Sphere::Intersect_Mouse(_vector Origin, _vector Direction, _float& Dist)
+_bool CBounding_Sphere::Intersect_Mouse(_vector vOrigin, _vector vDirection, _float& fDist)
 {
-	_bool		isColl = false;
+	_bool		bColl = false;
 
-	return isColl = m_pSphere->Intersects(Origin, Direction, Dist);
+	return bColl = m_pSphere->Intersects(vOrigin, vDirection, fDist);
 }
 
 CBounding_Sphere * CBounding_Sphere::Create(const _float3& vPosition, _float fRadius)

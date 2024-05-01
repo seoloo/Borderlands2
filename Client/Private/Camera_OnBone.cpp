@@ -182,11 +182,11 @@ void CCamera_OnBone::Late_Tick(_float fTimeDelta)
 
 void CCamera_OnBone::Moving_Camera(_float fTimeDelta)
 {
-    _vector TargetPos = m_ObjectPos + m_ObjectLook + m_ObjectUp;
+    _vector vTargetPos = m_ObjectPos + m_ObjectLook + m_ObjectUp;
 
     _vector vCameraPos = m_pTransform->Get_State(CTransform::STATE_POSITION);
 
-    _vector vLength = XMVectorSubtract(TargetPos, vCameraPos);
+    _vector vLength = XMVectorSubtract(vTargetPos, vCameraPos);
     _float fLenghX = XMVectorGetX(XMVector3Length(vLength));
     _vector vFinalPos = XMVectorSet(0.f, 0.f, 0.f, 0.f);
 

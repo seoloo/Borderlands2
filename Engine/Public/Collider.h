@@ -42,7 +42,7 @@ public:
 private:
 	TYPE							m_eType = TYPE_END;
 	class CBounding* m_pBounding = { nullptr };
-	_bool							m_isCollision = { false };
+	_bool							m_bCollision = { false };
 
 #ifdef _DEBUG
 private:

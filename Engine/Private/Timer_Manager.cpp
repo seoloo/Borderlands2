@@ -26,12 +26,12 @@ _float CTimer_Manager::Compute_TimeDelta(const wstring & strTimerTag, _bool bSlo
 
 	pTimer->Update(bSlowDown, bStop);
 
-	_float result = pTimer->Get_TimeDelta();
+	_float fresult = pTimer->Get_TimeDelta();
 
-	if (result >= 1.f)
-		result = 1 / 60.f;
+	if (fresult >= 1.f)
+		fresult = 1 / 60.f;
 
-	return result;
+	return fresult;
 }
 
 CTimer * CTimer_Manager::Find_Timer(const wstring & strTimerTag)

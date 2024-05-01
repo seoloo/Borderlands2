@@ -19,13 +19,13 @@ public:
 	void				Update(_bool bSlowdown = false, _bool bStop = false);
 
 private:
-	LARGE_INTEGER		m_CurrentTime;
-	LARGE_INTEGER		m_OldTime;
-	LARGE_INTEGER		m_OriginTime;
-	LARGE_INTEGER		m_CpuTick;
+	LARGE_INTEGER		m_llCurrentTime;
+	LARGE_INTEGER		m_llOldTime;
+	LARGE_INTEGER		m_llOriginTime;
+	LARGE_INTEGER		m_llCpuTick;
 
 	float				m_fTimeDelta;
-	_float				m_fTimeValue = 1.f;
+	float				m_fTimeValue = 1.f;
 public:
 	static CTimer* Create();
 	virtual void Free() override;

@@ -85,12 +85,12 @@ void CCollider::Tick(_fmatrix WorldMatrix)
 
 _bool CCollider::Collision(CCollider* pTargetCollider)
 {
-	m_isCollision = false;
+	m_bCollision = false;
 
 	if (nullptr == pTargetCollider)
-		return m_isCollision;
+		return m_bCollision;
 
-	return m_isCollision = m_pBounding->Intersect(pTargetCollider->m_eType, 
+	return m_bCollision = m_pBounding->Intersect(pTargetCollider->m_eType, 
 		pTargetCollider->m_pBounding->Get_BoundingDesc());
 }
 
@@ -112,7 +112,7 @@ _bool CCollider::Collision_Mouse()
 
 HRESULT CCollider::Render()
 {
-	/*m_pContext->IASetInputLayout(m_pInputLayout);
+	m_pContext->IASetInputLayout(m_pInputLayout);
 
 	m_pBaseEffect->SetWorld(XMMatrixIdentity());
 
@@ -125,12 +125,12 @@ HRESULT CCollider::Render()
 
 	m_pBatch->Begin();
 
-	_vector		vColor = m_isCollision == false 
+	_vector		vColor = m_bCollision == false 
 		? XMVectorSet(0.f, 1.f, 0.f, 1.f) : XMVectorSet(1.f, 0.f, 0.f, 1.f);
 
 	m_pBounding->Render(m_pBatch, vColor);
 
-	m_pBatch->End();*/
+	m_pBatch->End();
 
 	return S_OK;
 }

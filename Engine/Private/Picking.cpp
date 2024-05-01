@@ -107,10 +107,10 @@ void CPicking::Transform_ToLocalSpace(const _float4x4& WorldMatrix)
 _bool CPicking::Intersect_Triangle_InLocal(const _vector pPointA, const _vector pPointB, const _vector pPointC, _float3* pOut)
 {
 	float		fDist = 0.f;
-	bool		isColl = { false };
+	bool		bColl = { false };
 
-	_vector    vMouseRayPos;
-	_vector    vMouseRay;
+	_vector		vMouseRayPos;
+	_vector		vMouseRay;
 
 	_vector		vMouseRay_Local = XMLoadFloat3(&m_vMouseRay_Local);
 	_vector		vMouseRayPos_Local = XMLoadFloat3(&m_vMouseRayPos_Local);
@@ -118,16 +118,16 @@ _bool CPicking::Intersect_Triangle_InLocal(const _vector pPointA, const _vector 
 	vMouseRayPos = XMLoadFloat3(&m_vMouseRayPos_Local);
 	vMouseRay = XMLoadFloat3(&m_vMouseRay_Local);
 
-	isColl = DirectX::TriangleTests::Intersects(vMouseRayPos, vMouseRay, pPointA, pPointB, pPointC, fDist);
+	bColl = DirectX::TriangleTests::Intersects(vMouseRayPos, vMouseRay, pPointA, pPointB, pPointC, fDist);
 
-	if (true == isColl)
+	if (true == bColl)
 	{
 		_vector vMouseIntersection = vMouseRay_Local * fDist + vMouseRayPos_Local;
 
 		XMStoreFloat3(pOut, vMouseIntersection);
 	}
 
-	return isColl;
+	return bColl;
 }
 
 _bool CPicking::Intersect_Collider(CBounding* pCollider)

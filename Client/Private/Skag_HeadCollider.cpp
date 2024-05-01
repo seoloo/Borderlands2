@@ -150,19 +150,19 @@ void CSkag_HeadCollider::Tick(_float fTimeDelta)
 	{
 		random_device rd;
 		mt19937 gen(rd());
-		uniform_int_distribution<int> Demage(30, 37);
+		uniform_int_distribution<int> iDemage(30, 37);
 
-		m_pObject->Decrease_Hp(Demage(gen));
+		m_pObject->Decrease_Hp(iDemage(gen));
 		m_bDemage = false;
 
 		CVIBuffer_Point_Instance::POINTINSTANCEDESC		Desc;
-		_vector TempPos = m_pObjectTransformCom->Get_State(CTransform::STATE_POSITION);
-		TempPos.m128_f32[1] += 5.f;
+		_vector vTempPos = m_pObjectTransformCom->Get_State(CTransform::STATE_POSITION);
+		vTempPos.m128_f32[1] += 5.f;
 		Desc.iNum = 1;
 
-		XMStoreFloat4(&Desc.vPivotPos, TempPos);
-		Desc.iDamage = Demage(gen);
-		if (FAILED(pGameInstance->Add_GameObject(LEVEL_STATIC, TEXT("Layer_Effect_Blast"),
+		XMStoreFloat4(&Desc.vPivotPos, vTempPos);
+		Desc.iDamage = iDemage(gen);
+		if (FAILED(pGameInstance->Add_GameObject(LEVEL_STATIC, TEXT("Layer_DamageFont"),
 			TEXT("Prototype_GameObject_DamageFont"), &Desc)))
 			return;
 	}

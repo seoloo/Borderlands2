@@ -118,20 +118,20 @@ void CTransform::Go_Straight(_float fTimeDelta, CNavigation* pNavigation)
 	{
 		m_fAcceleration += m_fMaxAcceleration * fTimeDelta;
 
-		m_fAcceleration = std::min(m_fAcceleration, m_fMaxAcceleration);
+		m_fAcceleration = min(m_fAcceleration, m_fMaxAcceleration);
 
 		_vector vLastVelocity = XMVectorZero();
 
-		_vector currentVelocity = XMVector3Normalize(vLook) * m_TransformDesc.fSpeedPerSec;
+		_vector vCurVelocity = XMVector3Normalize(vLook) * m_TransformDesc.fSpeedPerSec;
 
-		_vector acceleratedVelocity = vLastVelocity +
-			(currentVelocity - vLastVelocity) * m_fAcceleration;
+		_vector vAccelerVelocity = vLastVelocity +
+			(vCurVelocity - vLastVelocity) * m_fAcceleration;
 
-		vPosition += acceleratedVelocity * fTimeDelta;
+		vPosition += vAccelerVelocity * fTimeDelta;
 
 		Set_State(STATE_POSITION, vPosition);
 
-		vLastVelocity = acceleratedVelocity;
+		vLastVelocity = vAccelerVelocity;
 	}
 }
 

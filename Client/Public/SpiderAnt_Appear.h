@@ -13,9 +13,9 @@ class CSpiderAnt_Appear final :
     public CSpiderAnt_State
 {
 public:
-    virtual HRESULT Enter(CSpiderAnt* spiderant) override;
-    virtual void Tick(_float fTimeDelta) override;
-    virtual void Exit(CSpiderAnt* spiderant) override;
+    virtual HRESULT Enter(CSpiderAnt* pSpiderAnt) override;
+    virtual void	Tick(_float fTimeDelta) override;
+    virtual void	Exit(CSpiderAnt* pSpiderAnt) override;
 
 private:
 	CSpiderAnt* m_pSpiderAnt = { nullptr };
